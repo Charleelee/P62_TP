@@ -1,7 +1,11 @@
+/* CSS Général */
+a {
+    text-decoration: none;
+    color: #141414
+}
+
 /* CSS pour les <article> de la page game */
 .product {
-    width:200px;
-    height:200px;
     background-color: #e1e1e1;
     display:inline-block;
     margin-right:5px;
@@ -25,4 +29,41 @@ article > .product_img {
 article:hover > span {
    background: linear-gradient(to bottom,#9fbf00,#80ab00);
     color:#fff
+}
+
+/* CSS des jeux de la page d'accueil */
+
+#game_wrapper{
+    margin:0 auto;
+    width:620px;
+}
+
+.big > .product {
+}
+
+.big > .product > img {
+    width:400px;
+    height:300px;
+}
+
+.medium > .product > img {
+    width:200px;
+    height:300px;
+}
+
+.small > .product > img {
+    width:150px;
+    height:100px;
+}
+
+.medium > .product > h3, .big > .product > h3, .small > .product > h3 {
+    position:relative;
+    bottom:70px;
+    padding: 5px 0 5px 10px;
+    background-color: rgba(255, 255, 255, 0.43);
+}
+
+.small > .product > h3 {
+    font-size: 10px;
+    bottom:50px;
 }

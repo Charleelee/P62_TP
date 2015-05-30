@@ -17,3 +17,12 @@ function generate_gameArticle($gameTitle,$category,$price,$ref_id,$productImg,$p
 	echo '</article>';
 	echo '</a>';
 }
+
+function generate_indexArticle($gameTitle,$category,$ref_id,$productImg,$productURL,$size) {
+	echo "<a class='$category $size' href=",$productURL,">";
+	echo "<article class='product' id=",$ref_id,">";
+	echo "<img class='product_img' src=",$productImg," alt='image'>";
+	echo "<h3>$gameTitle</h3>";
+	echo '</article>';
+	echo '</a>';
+}

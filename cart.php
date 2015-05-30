@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php
-echo'Redirection effectuée';
+
 ?>
 </body>
 </html>
