@@ -1,5 +1,13 @@
 <?php
-function createGameArticle($gameTitle,$category,$price,$ref_id,$productImg,$productURL) {
+/**
+ * @param $gameTitle
+ * @param $category
+ * @param $price
+ * @param $ref_id
+ * @param $productImg
+ * @param $productURL
+ */
+function generate_gameArticle($gameTitle,$category,$price,$ref_id,$productImg,$productURL) {
 	echo "<a class=",$category," href=",$productURL,">";
 	echo "<article class='product' id=",$ref_id,">";
 	echo "<img class='product_img' src=",$productImg," alt='image'>";
