@@ -2,12 +2,15 @@
 ?>
 <!DOCTYPE html>
 <?php include ('html_head.php'); ?>
+<html>
 <body>
-<?php include('header.php'); ?>
 <?php
+include('header.php');
 include('assets/data/arrays.php');
 include('assets/data/fonctions.php');
+
 echo'<div id=game_wrapper>';
+
 foreach($index_gamesArticles as $videogames => $type) {
     foreach ($type as $type_vg => $price) {
         foreach ($price as $price_vg => $ref_id) {

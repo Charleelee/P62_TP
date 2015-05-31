@@ -10,30 +10,29 @@ body {
 }
 
 ul {
-    position:relative;
-    padding:0;
-    height:95px;
-    margin-top:0px;
+    position: relative;
+    padding: 0;
+    height: 55px;
+    margin-top: 0px;
 }
-
 li {
     list-style: none;
     display:inline-block;
     border-left: solid rgba(128, 128, 128, 0.50) 2px;
     border-right: solid rgba(255, 255, 255, 0.50) 2px;
-    padding: 5px 60px;
+    padding: 5px 20px;
     float:left;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 85px;
-    width:305px;
+    height: 45px;
+    width:299px;
 }
 
 /* CSS de la navigation */
 
 #logo{
-    width:80px;
+    width:40px;
 }
 
 nav {
@@ -42,18 +41,27 @@ nav {
 }
 
 nav > ul > li:nth-child(1) {
-    width:10%;
+    width:3%;
+    padding-left: 13px;
 }
 
-nav > ul > li:nth-child(4),nav > ul > li:nth-child(5),nav > ul > li:nth-child(6) {
+nav > ul > li:nth-child(4) {
+    box-sizing: border-box;
+    height:55px;
+    padding-top:18px;
+}
+
+#fb{
+    padding-top:10px;
+    border-left: solid rgba(128, 128, 128, 0.50) 2px;
+}
+
+nav > ul > li:nth-child(5),nav > ul > li:nth-child(6),nav > ul > li:nth-child(7) {
     width:10px;
     border: none;
-    padding:0 30px;
+    padding:10px 50px 0 20px;
     background-color: inherit;
-}
-
-li > a > img {
-    width:50px;
+    display:list-item;
 }
 
 li:nth-child(1):hover{
@@ -77,17 +85,52 @@ li:hover a{
     font-size: 0.65em;
     padding:5px;
     width: 6px;
+    position:relative;
+    top:-20px;
+    right:10px;
 }
+
+#cart_icon {
+    position: relative;
+    top:-18px;
+    left:220px;
+    color: #656565;
+}
+.fa-facebook-official {
+    color : #0c2683;
+}
+
+.fa-twitter {
+    color : #00c6ff;
+}
+
+.fa-instagram{
+    color:#517fa4;
+}
+
 /* CSS pour les <article> de la page game */
-.product {
+.product, .game_product {
     display:inline-block;
     margin-right:5px;
     margin-bottom: 5px;
-
 }
+
+.game_product{
+    background: url("../img/platform.png");
+    width:215px;
+    height:150px;
+    margin-right: 20px;
+}
+
+.game_product > h3 {
+    margin-bottom: 0;
+    margin-top:5px;
+    padding-left:10px;
+}
+
 .product_price {
     position: relative;
-    left:95px;
+    left:155px;
     bottom:3px;
     border: solid black 1px;
     border-radius: 4px;
@@ -97,11 +140,14 @@ li:hover a{
     font-size: 10px;
 }
 article > .product_img {
-    width:196px;
-    height:110px;
+    width:215px;
+    height:100px;
     background-color: #ffffff
 }
 
+.product_platform {
+    width:200px;
+}
 
 article:hover > span {
    background: linear-gradient(to bottom,#9fbf00,#80ab00);
@@ -110,12 +156,9 @@ article:hover > span {
 
 /* CSS des jeux de la page d'accueil */
 
-#game_wrapper{
+#game_wrapper, #content_wrapper{
     margin-left:80px;
     width:1180px;
-}
-
-.big > .product {
 }
 
 .big > .product > img {
@@ -135,7 +178,7 @@ article:hover > span {
 
 .medium > .product > h3, .big > .product > h3, .small > .product > h3 {
     position:absolute;
-    top:455px;
+    top:420px;
     padding: 5px 0 5px 10px;
     background-color: rgba(255, 255, 255, 0.43);
     font-size: 30px;
@@ -152,6 +195,6 @@ article:hover > span {
 
 .small > .product > h3 {
     font-size: 15px;
-    top:655px;
+    top:610px;
     width:221px;
 }
