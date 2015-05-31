@@ -5,10 +5,12 @@ a {
 }
 
 body {
-    background: linear-gradient(#3D7EAA,#FFE47A);
+    background: linear-gradient(#608ba8, #dcdcdc);
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 ul {
+    position:relative;
     padding:0;
     height:85px;
     margin-top:0px;
@@ -17,10 +19,14 @@ ul {
 li {
     list-style: none;
     display:inline-block;
-    border-right: solid transparent 1px;
-    padding: 0 10px 0 50px;
+    border-right: solid black 1px;
+    padding: 0 60px 0 60px;
     float:left;
-    height:inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 85px;
+    width:305px;
 }
 
 /* CSS de la navigation */
@@ -34,16 +40,41 @@ nav {
     box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.75);
 }
 
-nav > ul > li:nth-child(2),nav > ul > li:nth-child(3){
-    padding: 20px 100px 0px 100px;
+nav > ul > li:nth-child(1) {
+    width:10%;
+}
+
+nav > ul > li:nth-child(4),nav > ul > li:nth-child(5),nav > ul > li:nth-child(6) {
+    width:10px;
+    border: none;
+    padding:0 30px;
+    background-color: inherit;
+}
+
+li > a > img {
+    width:50px;
+}
+
+li:nth-child(1):hover{
+    background-color: #ba0101;
+    transition: background-color 300ms linear;
+}
+
+li:hover{
+    background-color: #0eb5f7;
+    transition: background-color 300ms linear;
+}
+
+li:hover a{
+    color:white;
 }
 
 /* CSS pour les <article> de la page game */
 .product {
-    background-color: #e1e1e1;
     display:inline-block;
     margin-right:5px;
     margin-bottom: 5px;
+
 }
 .product_price {
     position: relative;
@@ -59,7 +90,9 @@ nav > ul > li:nth-child(2),nav > ul > li:nth-child(3){
 article > .product_img {
     width:196px;
     height:110px;
+    background-color: #ffffff
 }
+
 
 article:hover > span {
    background: linear-gradient(to bottom,#9fbf00,#80ab00);
@@ -93,9 +126,11 @@ article:hover > span {
 
 .medium > .product > h3, .big > .product > h3, .small > .product > h3 {
     position:absolute;
-    top:465px;
+    top:455px;
     padding: 5px 0 5px 10px;
     background-color: rgba(255, 255, 255, 0.43);
+    font-size: 30px;
+    box-shadow: 2px 2px 20px 3px rgba(255, 255, 255, 0.30);
 }
 
 .big > .product > h3{
@@ -107,7 +142,7 @@ article:hover > span {
 }
 
 .small > .product > h3 {
-    font-size: 10px;
+    font-size: 15px;
     top:655px;
     width:221px;
 }
