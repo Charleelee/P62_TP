@@ -12,15 +12,16 @@ body {
 ul {
     position:relative;
     padding:0;
-    height:85px;
+    height:95px;
     margin-top:0px;
 }
 
 li {
     list-style: none;
     display:inline-block;
-    border-right: solid black 1px;
-    padding: 0 60px 0 60px;
+    border-left: solid rgba(128, 128, 128, 0.50) 2px;
+    border-right: solid rgba(255, 255, 255, 0.50) 2px;
+    padding: 5px 60px;
     float:left;
     display: flex;
     justify-content: center;
@@ -69,6 +70,14 @@ li:hover a{
     color:white;
 }
 
+#cart_items {
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 0.65em;
+    padding:5px;
+    width: 6px;
+}
 /* CSS pour les <article> de la page game */
 .product {
     display:inline-block;
