@@ -5,20 +5,18 @@
 
 $does_queryString_exist = isset($_GET);
 
-$is_menu_clicked = (($does_queryString_exist) && (isset($_GET['action'])));
+$is_page_clicked = (($does_queryString_exist) && (isset($_GET['page'])));
 
-if($is_menu_clicked) {
-    switch ($_GET['action']) {
-        case'game':
+if($is_page_clicked){
+    switch($_GET['page']){
+        case 'game':
             redirect('games.php');
             break;
-        case'cart':
-            header('Location : cart.php');
+        case'index':
+            redirect('index.php');
             break;
     }
 }
 
-$is_game_clicked = (($does_queryString_exist) && (isset($_GET['game'])));
-if($is_game_clicked){
-    redirect('game_details.php');
-}
+$is_videogame_clicked = (($does_queryString_exist) && (isset($_GET['game'])));
+$is_videogame_clicked ? redirect('game_details.php') : '';
