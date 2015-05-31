@@ -4,6 +4,40 @@ a {
     color: #141414
 }
 
+body {
+    background: linear-gradient(#3D7EAA,#FFE47A);
+}
+
+ul {
+    padding:0;
+    height:85px;
+    margin-top:0px;
+}
+
+li {
+    list-style: none;
+    display:inline-block;
+    border-right: solid transparent 1px;
+    padding: 0 10px 0 50px;
+    float:left;
+    height:inherit;
+}
+
+/* CSS de la navigation */
+
+#logo{
+    width:80px;
+}
+
+nav {
+    background-color: #e4e4e4;
+    box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.75);
+}
+
+nav > ul > li:nth-child(2),nav > ul > li:nth-child(3){
+    padding: 20px 100px 0px 100px;
+}
+
 /* CSS pour les <article> de la page game */
 .product {
     background-color: #e1e1e1;
@@ -35,45 +69,45 @@ article:hover > span {
 /* CSS des jeux de la page d'accueil */
 
 #game_wrapper{
-    margin:0 auto;
-    width:620px;
+    margin-left:80px;
+    width:1180px;
 }
 
 .big > .product {
 }
 
 .big > .product > img {
-    width:400px;
-    height:300px;
+    width:720px;
+    height:450px;
 }
 
 .medium > .product > img {
-    width:210px;
-    height:300px;
+    width:450px;
+    height:450px;
 }
 
 .small > .product > img {
-    width:150px;
-    height:100px;
+    width:231px;
+    height:140px;
 }
 
 .medium > .product > h3, .big > .product > h3, .small > .product > h3 {
     position:absolute;
-    top:300px;
+    top:465px;
     padding: 5px 0 5px 10px;
     background-color: rgba(255, 255, 255, 0.43);
 }
 
 .big > .product > h3{
-    width:390px;
+    width:710px;
 }
 
 .medium > .product > h3{
-    width:200px;
+    width:440px;
 }
 
 .small > .product > h3 {
     font-size: 10px;
-    top:425px;
-    width:150px;
+    top:655px;
+    width:221px;
 }

@@ -67,6 +67,17 @@ $index_gamesArticles =array(
 			),
 		),
 	),
+	'Borderlands : Pre sequel' => array(
+		'fps' => array(
+			'40$' => array(
+				'index_vg_07' => array(
+					'assets/img/bdlands_small.jpg' => array(
+						'?game=got' => 'small'
+					),
+				),
+			),
+		),
+	),
 );
 
 //Array pour la page games

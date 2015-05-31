@@ -19,7 +19,6 @@ if($is_menu_clicked) {
 }
 
 $is_game_clicked = (($does_queryString_exist) && (isset($_GET['game'])));
-var_dump($is_game_clicked);
 if($is_game_clicked){
     redirect('game_details.php');
 }
