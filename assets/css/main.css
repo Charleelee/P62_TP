@@ -117,7 +117,7 @@ li:hover a{
 
 .game_product{
     background: url("../img/platform.png");
-    width:200px;
+    width:215px;
     height:150px;
     margin-right: 20px;
 }
@@ -140,7 +140,7 @@ li:hover a{
     font-size: 10px;
 }
 article > .product_img {
-    width:200px;
+    width:215px;
     height:100px;
     background-color: #ffffff
 }
