@@ -34,6 +34,39 @@ $index_gamesArticles =array(
 			),
 		),
 	),
+	'Games of Thrones' => array(
+		'aventure' => array(
+			'40$' => array(
+				'index_vg_04' => array(
+					'assets/img/got_small.jpg' => array(
+						'?game=got' => 'small'
+					),
+				),
+			),
+		),
+	),
+	'Rebuild3' => array(
+		'aventure' => array(
+			'30$' => array(
+				'index_vg_05' => array(
+					'assets/img/rebuild_small.jpg' => array(
+						'?game=rebuild' => 'small'
+					),
+				),
+			),
+		),
+	),
+	'Dragon age' => array(
+		'rpg' => array(
+			'60$' => array(
+				'index_vg_06' => array(
+					'assets/img/dragon_small.jpg' => array(
+						'?game=dragon' => 'small'
+					),
+				),
+			),
+		),
+	),
 );
 
 //Array pour la page games

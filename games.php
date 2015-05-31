@@ -1,8 +1,4 @@
-<?php
-$does_queryString_exist=isset($_GET);
-$is_game_clicked = $does_queryString_exist ? isset($_GET['game']): '';
-$is_game_clicked ? header('Location : games_detail.php'):'';
-
+<?php include('controller.php');
 include('assets/data/arrays.php');
 include('assets/data/fonctions.php');
 include ('html_head.php');

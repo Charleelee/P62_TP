@@ -9,6 +9,7 @@ a {
     background-color: #e1e1e1;
     display:inline-block;
     margin-right:5px;
+    margin-bottom: 5px;
 }
 .product_price {
     position: relative;
@@ -47,7 +48,7 @@ article:hover > span {
 }
 
 .medium > .product > img {
-    width:200px;
+    width:210px;
     height:300px;
 }
 
@@ -57,13 +58,22 @@ article:hover > span {
 }
 
 .medium > .product > h3, .big > .product > h3, .small > .product > h3 {
-    position:relative;
-    bottom:70px;
+    position:absolute;
+    top:300px;
     padding: 5px 0 5px 10px;
     background-color: rgba(255, 255, 255, 0.43);
 }
 
+.big > .product > h3{
+    width:390px;
+}
+
+.medium > .product > h3{
+    width:200px;
+}
+
 .small > .product > h3 {
     font-size: 10px;
-    bottom:50px;
+    top:425px;
+    width:150px;
 }
