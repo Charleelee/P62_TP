@@ -82,22 +82,25 @@ $index_gamesArticles =array(
 
 //Array pour la page games
 $games_gamesArticles = array(
-	'The witcher' => array(
-		'rpg' => array(
-			'20$' => array(
-				'vg_01' => array(
-					'assets/img/witcher_small.jpg' => '?game=witcher'
-				),
+		'vg_03' => array(
+				'title' => 'The Witcher',
+				'genre' => 'rpg',
+				'price' => '20$',
+				'img' => 'assets/img/invisible_small.jpg',
+				'url' => '?game=witcher',
 			),
-		),
-	),
-	'Invisible' => array(
-		'fps' => array(
-			'10$' => array(
-				'vg_02' => array(
-					'assets/img/invisible_small.jpg' => '?game=invisble'
-				),
+		'vg_03' => array(
+				'title' => 'The Witcher ',
+				'genre' => 'rpg',
+				'price' => '20$',
+				'img' => 'assets/img/invisible_small.jpg',
+				'url' => '?game=witcher',
 			),
-		),
-	),
-);
+		'vg_03' => array(
+				'title' => 'The Witcher',
+				'genre' => 'rpg',
+				'price' => '20$',
+				'img' => 'assets/img/invisible_small.jpg',
+				'url' => '?game=witcher',
+			),
+		);
