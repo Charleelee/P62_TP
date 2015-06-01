@@ -15,9 +15,10 @@ include('assets/data/arrays.php');
 	<nav>
 		<ul>
 			<li><img src="assets/img/icon/search7.png" alt="icon" width="35px">Search</li>
-			<li><a href="">FPS</a></li>
-			<li><a href="">Strategy</a></li>
-			<li><a href="">RPG</a></li>
+			<li><a href="?genre=fps">FPS</a></li>
+			<li><a href="?genre=strategy">Strategy</a></li>
+			<li><a href="?genre=rpg">RPG</a></li>
+			<li><a href="?genre=adventure">Adventure</a></li>
 		</ul>
 	</nav>
 	<section>
