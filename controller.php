@@ -23,5 +23,5 @@ if($is_page_clicked){
 }
 
 $is_videogame_clicked = (($does_queryString_exist) && (isset($_GET['game'])) &&
-    ($_SERVER['PHP_SELF']!='/P62_TP/game_details.php'));
+    ($_SERVER['PHP_SELF']!='/P62_TP/game_details.php') && ($_SERVER['PHP_SELF']!='/P62_TP/cart.php'));
 $is_videogame_clicked ? redirect_gamedetails('game_details.php') : '';
