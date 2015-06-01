@@ -92,237 +92,270 @@ $games_gamesArticles = array(
 				'price' => '45$',
 				'img' => 'assets/img/dungeonkeeper_small.jpg',
 				'url' => '?game=dungeonkeeper2',
-				'id' => 'vg_03',
+				'id' => 'vg_04',
 			),
-		'vg_05' => array(
+		'alphacentauri' => array(
 				'title' => 'Alpha Centauri',
 				'genre' => 'strategy',
 				'price' => '20$',
 				'img' => 'assets/img/alphacentauri_small.jpg',
 				'url' => '?game=alphacentauri',
+				'id' => 'vg_05',
 			),
-		'vg_06' => array(
+		'dukenukem' => array(
 				'title' => 'Duke Nukem 3D',
 				'genre' => 'fps',
 				'price' => '35$',
 				'img' => 'assets/img/dukenukem_small.jpg',
 				'url' => '?game=dukenukem',
+				'id' => 'vg_06',
 			),
-		'vg_07' => array(
+		'dragonshard' => array(
 				'title' => 'Dragon Shard',
 				'genre' => 'rpg',
 				'price' => '00$',
 				'img' => 'assets/img/dragonshard_small.jpg',
 				'url' => '?game=dragonshard',
+				'id' => 'vg_07',
 			),
-		'vg_08' => array(
+		'farcry3' => array(
 				'title' => 'FarCry',
 				'genre' => 'fps',
 				'price' => '20$',
 				'img' => 'assets/img/farcry_small.jpg',
 				'url' => '?game=farcry3',
+				'id' => 'vg_08',
 			),
-		'vg_09' => array(
+		'postal2' => array(
 				'title' => 'Postal 2',
 				'genre' => 'fps',
 				'price' => '20$',
 				'img' => 'assets/img/postal_small.jpg',
 				'url' => '?game=postal2',
+				'id' => 'vg_09',
 			),
-		'vg_10' => array(
+		'unreal' => array(
 				'title' => 'Unreal Tournament',
 				'genre' => 'fps',
 				'price' => '15$',
 				'img' => 'assets/img/unreal_small.jpg',
 				'url' => '?game=unreal',
+				'id' => 'vg_10',
 			),
-		'vg_11' => array(
+		'icewind' => array(
 				'title' => 'IceWind Dale',
 				'genre' => 'rpg',
 				'price' => '40$',
 				'img' => 'assets/img/icewind_small.jpg',
 				'url' => '?game=icewind',
+				'id' => 'vg_11',
 			),
-		'vg_12' => array(
+		'arcanum' => array(
 				'title' => 'Arcanum',
 				'genre' => 'rpg',
 				'price' => '25$',
 				'img' => 'assets/img/arcanum_small.jpg',
 				'url' => '?game=arcanum',
+				'id' => 'vg_12',
 			),
-		'vg_13' => array(
+		'commandos' => array(
 				'title' => 'Commandos',
 				'genre' => 'strategy',
 				'price' => '5$',
 				'img' => 'assets/img/commandos_small.jpg',
 				'url' => '?game=commandos',
+				'id' => 'vg_13',
 			),
-		'vg_14' => array(
+		'stalker' => array(
 				'title' => 'S.T.A.L.K.E.R.',
 				'genre' => 'fps',
 				'price' => '25$',
 				'img' => 'assets/img/stalker_small.jpg',
 				'url' => '?game=stalker',
+				'id' => 'vg_14',
 			),
-		'vg_15' => array(
+		'bloodrayne' => array(
 				'title' => 'Bloodrayne',
 				'genre' => 'fps',
 				'price' => '20$',
 				'img' => 'assets/img/bloodrayne_small.jpg',
 				'url' => '?game=bloodrayne',
+				'id' => 'vg_15',
 			),
-		'vg_16' => array(
+		'deusex' => array(
 				'title' => 'Deus Ex',
 				'genre' => 'fps/rpg',
 				'price' => '60$',
 				'img' => 'assets/img/deusex_small.jpg',
 				'url' => '?game=deusex',
+				'id' => 'vg_16',
 			),
-		'vg_17' => array(
+		'singold' => array(
 				'title' => 'Sin Gold',
 				'genre' => 'fps',
 				'price' => '2$',
 				'img' => 'assets/img/singold_small.jpg',
 				'url' => '?game=singold',
+				'id' => 'vg_17',
 			),
-		'vg_18' => array(
+		'colonization' => array(
 				'title' => 'Colonization',
 				'genre' => 'strategy',
 				'price' => '20$',
 				'img' => 'assets/img/colonization_small.jpg',
 				'url' => '?game=colonization',
+				'id' => 'vg_18',
 			),
-		'vg_19' => array(
+		'mightandmagic' => array(
 				'title' => 'Might and Magic 8',
 				'genre' => 'rpg',
 				'price' => '10$',
 				'img' => 'assets/img/mightandmagic_small.jpg',
 				'url' => '?game=mightandmagic',
+				'id' => 'vg_19',
 			),
-		'vg_20' => array(
+		'banished' => array(
 				'title' => 'Banished',
 				'genre' => 'strategy',
 				'price' => '20$',
 				'img' => 'assets/img/banished_small.jpg',
 				'url' => '?game=banished',
+				'id' => 'vg_20',
 			),
-		'vg_21' => array(
+		'jediknight' => array(
 				'title' => 'Star wars : Jedi Knight',
 				'genre' => 'fps',
 				'price' => '50$',
 				'img' => 'assets/img/jediknight_small.jpg',
 				'url' => '?game=jediknight',
+				'id' => 'vg_21',
 			),
-		'vg_22' => array(
+		'gothic2' => array(
 				'title' => 'Gothic 2',
 				'genre' => 'rpg',
 				'price' => '10$',
 				'img' => 'assets/img/gothic_small.jpg',
 				'url' => '?game=gothic2',
+				'id' => 'vg_22',
 			),
-		'vg_23' => array(
+		'Silver' => array(
 				'title' => 'Silver',
 				'genre' => 'rpg',
 				'price' => '35$',
 				'img' => 'assets/img/silver_small.jpg',
 				'url' => '?game=Silver',
+				'id' => 'vg_23',
 			),
-		'vg_24' => array(
+		'silentstor' => array(
 				'title' => 'Silent Storm',
 				'genre' => 'strategy',
 				'price' => '20$',
 				'img' => 'assets/img/silentstorm_small.jpg',
 				'url' => '?game=silentstorm',
+				'id' => 'vg_24',
 			),
-		'vg_25' => array(
+		'castle' => array(
 				'title' => 'Castles 1 + 2',
 				'genre' => 'strategy',
 				'price' => '25$',
 				'img' => 'assets/img/castle_small.jpg',
 				'url' => '?game=castles',
+				'id' => 'vg_25',
 			),
-		'vg_26' => array(
+		'rainbowsix' => array(
 				'title' => 'Rainbow Six',
 				'genre' => 'fps',
 				'price' => '40$',
 				'img' => 'assets/img/rainbowsix_small.jpg',
 				'url' => '?game=rainbowsix',
+				'id' => 'vg_26',
 			),
-		'vg_27' => array(
+		'wizardy' => array(
 				'title' => 'Wizardry 8',
 				'genre' => 'rpg',
 				'price' => '30$',
 				'img' => 'assets/img/wizardy_small.jpg',
 				'url' => '?game=wizardy',
+				'id' => 'vg_27',
 			),
-		'vg_28' => array(
+		'kotr' => array(
 				'title' => 'Star wars : KOTOR',
 				'genre' => 'rpg',
 				'price' => '20$',
 				'img' => 'assets/img/kotr_small.jpg',
 				'url' => '?game=kotr',
+				'id' => 'vg_28',
 			),
-		'vg_29' => array(
+		'defcon' => array(
 				'title' => 'Defcon',
 				'genre' => 'strategy',
 				'price' => '35$',
 				'img' => 'assets/img/defcon_small.jpg',
 				'url' => '?game=defcon',
+				'id' => 'vg_29',
 			),
-		'vg_30' => array(
+		'borderlands' => array(
 				'title' => 'Borderlands : Pre Sequel',
 				'genre' => 'fps',
 				'price' => '25$',
 				'img' => 'assets/img/bdlands_small.jpg',
 				'url' => '?game=borderlands',
+				'id' => 'vg_30',
 			),
-		'vg_31' => array(
+		'shadowru' => array(
 				'title' => 'Shadowrun',
 				'genre' => 'rpg',
 				'price' => '10$',
 				'img' => 'assets/img/shadowrun_small.jpg',
 				'url' => '?game=shadowrun',
+				'id' => 'vg_31',
 			),
-		'vg_32' => array(
+		'gangsters' => array(
 				'title' => 'Gangsters',
 				'genre' => 'rpg',
 				'price' => '25$',
 				'img' => 'assets/img/gangsters_small.jpg',
 				'url' => '?game=gangsters',
+				'id' => 'vg_32',
 			),
-		'vg_33' => array(
+		'invisibl' => array(
 				'title' => 'Invisible',
 				'genre' => 'fps',
 				'price' => '10$',
 				'img' => 'assets/img/invisible_small.jpg',
 				'url' => '?game=invisible',
+				'id' => 'vg_33',
 			),
-		'vg_34' => array(
+		'metro' => array(
 				'title' => 'Metro redux',
 				'genre' => 'fps',
 				'price' => '40$',
 				'img' => 'assets/img/metro_small.jpg',
 				'url' => '?game=metro',
+				'id' => 'vg_34',
 			),
-		'vg_35' => array(
+		'got' => array(
 				'title' => 'Games of Thrones',
 				'genre' => 'adventure',
 				'price' => '40$',
 				'img' => 'assets/img/got_small.jpg',
 				'url' => '?game=got',
+				'id' => 'vg_35',
 			),
-		'vg_36' => array(
+		'rebuild' => array(
 				'title' => 'Rebuild3',
 				'genre' => 'adventure',
 				'price' => '30$',
 				'img' => 'assets/img/rebuild_small.jpg',
 				'url' => '?game=rebuild',
+				'id' => 'vg_36',
 			),
-		'vg_37' => array(
+		'dragon' => array(
 				'title' => 'Dragon Age',
 				'genre' => 'rpg',
 				'price' => '60$',
 				'img' => 'assets/img/dragon_small.jpg',
 				'url' => '?game=dragon',
+				'id' => 'vg_37',
 			),
 		);
