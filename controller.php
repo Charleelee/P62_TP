@@ -1,4 +1,5 @@
-<?php function redirect_gamedetails($url){ header("Location:$url".'?'.$_SERVER['QUERY_STRING']);}
+<?php 
+function redirect_gamedetails($url){ header("Location:$url".'?'.$_SERVER['QUERY_STRING']);}
 function redirect($url){ header("Location:$url");}
 //Redirection de la page si le $_GET existe et si la clé $_GET['action'] existe.
 //En fonction de la valeur de $_GET['action'] l'utilisateur changera de page

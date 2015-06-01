@@ -1,6 +1,6 @@
 <footer>
 	<!-- Background-color rbg(38,38,38) -->
-	<div>
+	<div class="footerTop">
 		<ul>
 			<li><a href="#">REDEEM CODE</a></li>
 			<li><a href="#">RECLAIM YOUR GAME</a></li>
@@ -9,7 +9,7 @@
 			<li><a href="#">SUBMIT YOUR GAME</a></li>
 		</ul>
 	</div>
-	<div>
+	<div class="footerMidle">
 		<ul>
 			<li><a href="#">GAMES</a></li>
 			<li><a href="#">ON SALE</a></li>
@@ -42,7 +42,7 @@
 			<li><a href="#">Forums</a></li>
 			<li><a href="#">Community Wishlist</a></li>
 		</ul>
-		<ul>
+		<ul class="footerButtons">
 			<li><a href="#"><img src="" alt="logo"></a></li>
 			<li><a href="#"><img src="" alt="logo"></a></li>
 			<li><a href="#"><img src="" alt="logo"></a></li>
@@ -53,7 +53,7 @@
 			<li><a href="#"><img src="" alt="logo"></a></li>
 		</ul>
 	</div>
-	<div>
+	<div class="footerBottom">
 		<!-- Background-color rbg(89,89,89) -->
 		<p>Legal</p>
 	</div>
