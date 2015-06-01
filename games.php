@@ -15,7 +15,7 @@ $selectionGenre = array_key_exists('genre', $_GET) ? $_GET['genre'] : null;
 	<div id="content_wrapper">
 	<nav>
 		<ul>
-			<li><img src="assets/img/icon/search7.png" alt="icon" width="35px">Search</li>
+			<li><img src="assets/img/icon/search7.png" alt="icon" width="35px" height="30px">Search</li>
 			<li><a href="?">ALL</a></li>
 			<li><a href="?genre=fps">FPS</a></li>
 			<li><a href="?genre=strategy">Strategy</a></li>
