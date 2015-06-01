@@ -67,28 +67,32 @@ $games_gamesArticles = array(
 				'genre' => 'rpg',
 				'price' => '20$',
 				'img' => 'assets/img/witcher_big.jpg',
+				'url' => '?game=witcher',
 				'id' => 'vg_01',
 			),
-		'vg_02' => array(
+		'baldursgate' => array(
 				'title' => 'Baldurs Gate',
 				'genre' => 'rpg',
 				'price' => '30$',
 				'img' => 'assets/img/baldur_small.jpg',
 				'url' => '?game=baldursgate',
+				'id' => 'vg_02',
 			),
-		'vg_03' => array(
+		'neverwinter' => array(
 				'title' => 'Neverwinter Nights',
 				'genre' => 'rpg',
 				'price' => '40$',
 				'img' => 'assets/img/neverwinter_small.jpg',
 				'url' => '?game=neverwinter',
+				'id' => 'vg_03',
 			),
-		'vg_04' => array(
+		'dungeonkeeper2' => array(
 				'title' => 'Dungeon Keeper 2',
 				'genre' => 'strategy',
 				'price' => '45$',
 				'img' => 'assets/img/dungeonkeeper_small.jpg',
 				'url' => '?game=dungeonkeeper2',
+				'id' => 'vg_03',
 			),
 		'vg_05' => array(
 				'title' => 'Alpha Centauri',

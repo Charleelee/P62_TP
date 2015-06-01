@@ -27,7 +27,7 @@ $selectionGenre = array_key_exists('genre', $_GET) ? $_GET['genre'] : null;
 	<section>
 		<?php foreach ($games_gamesArticles as $key => $v): ?>
 			<?php if (($selectionGenre == null) || ($selectionGenre == $v['genre'])): ?>
-			<a class="<?php echo $v['genre'] ?>" href="<?php echo $key ?>">
+			<a class="<?php echo $v['genre'] ?>" href="<?php echo $v['url'] ?>">
 				<article class="game_product" id="<?php echo $v['id'] ?>">
 					<img class="product_img" src="<?php echo $v['img'] ?>" alt='image'>
 					<h3><?php echo $v['title'] ?></h3>
