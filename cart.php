@@ -10,7 +10,7 @@ include('assets/data/arrays.php');
 <body>
 <?php include ('header.php'); ?>
     <div id="game_wrapper">
-        <?php foreach ($index_gamesArticles as $key => $v): ?>
+        <?php foreach ($games_gamesArticles as $key => $v): ?>
             <ul>
             	<li><?php echo $v['title'],' ',$v['price'] ?></li>
             </ul>
