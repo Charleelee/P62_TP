@@ -12,6 +12,7 @@ $selectionGenre = array_key_exists('genre', $_GET) ? $_GET['genre'] : null;
 <?php include ('html_head.php'); ?>
 <body>
 <?php include ('header.php'); ?>
+
 	<div id="content_wrapper">
 	<nav>
 		<ul>

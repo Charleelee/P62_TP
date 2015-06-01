@@ -62,7 +62,7 @@ $index_gamesArticles =array(
 
 #Array pour la page games
 $games_gamesArticles = array(
-		'?game=witcher' => array(
+		'witcher' => array(
 				'title' => 'The Witcher',
 				'genre' => 'rpg',
 				'price' => '20$',

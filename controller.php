@@ -1,4 +1,4 @@
-<?php function redirect($url){ header("Location:$url");}
+<?php function redirect($url){ header("Location:$url".'?'.$_SERVER['QUERY_STRING']);}
 //Redirection de la page si le $_GET existe et si la clé $_GET['action'] existe.
 //En fonction de la valeur de $_GET['action'] l'utilisateur changera de page
 //(En résumé, redirection de la page si l'utilisateur a cliqué sur le menu)
