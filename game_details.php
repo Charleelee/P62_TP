@@ -20,7 +20,10 @@ $gameId = array_key_exists('game', $_GET) ? $_GET['game'] : null;
 				</article>
 				<aside>
 					<span><?php echo $v['price'] ?></span>
+					<form method="get" action="cart.php">
 					<button>ADD TO CART</button>
+					<input type="hidden" name="game" value="<?php echo $_GET['game']?>" />
+					</form>
 				</aside>
 			<?php endif ?>
 		<?php endforeach ?>

@@ -16,6 +16,9 @@ if($is_page_clicked){
         case'index':
             redirect('index.php');
             break;
+        case'cart':
+            redirect('cart.php');
+            break;
     }
 }
 
