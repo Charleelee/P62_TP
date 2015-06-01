@@ -62,12 +62,12 @@ $index_gamesArticles =array(
 
 #Array pour la page games
 $games_gamesArticles = array(
-		'vg_01' => array(
+		'?game=witcher' => array(
 				'title' => 'The Witcher',
 				'genre' => 'rpg',
 				'price' => '20$',
 				'img' => 'assets/img/witcher_big.jpg',
-				'url' => '?game=witcher',
+				'id' => 'vg_01',
 			),
 		'vg_02' => array(
 				'title' => 'Baldurs Gate',
