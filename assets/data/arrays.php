@@ -1,5 +1,6 @@
 <?php
-//Array pour la page index.php
+#Array pour la page index.php
+#Items vedette
 $index_gamesArticles =array(
 	'vg_01' => array(
 			'title' => 'The Witcher',
@@ -59,7 +60,7 @@ $index_gamesArticles =array(
 		),
 	);
 
-//Array pour la page games
+#Array pour la page games
 $games_gamesArticles = array(
 		'vg_01' => array(
 				'title' => 'The Witcher',
