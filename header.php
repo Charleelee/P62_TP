@@ -3,12 +3,12 @@ $nb_item = 1;
 ?>
 
 <header>
-	<nav>
+	<nav id="navibarre">
 		<ul>
-			<li><img id="logo" src="assets/img/logo.png"/></li>
+			<li id="logo"><img class="logo" src="assets/img/logo.png"/></li>
 			<li><a href="?page=index">Acceuil</a></li>
 			<li><a href="?page=game">Jeux</a></li>
-			<li><a href="?page=cart">Mon panier</a>
+			<li id="cart"><a href="?page=cart">Mon panier</a>
 			<div id="cart_icon"	>
 				<i class="fa fa-shopping-cart
 			fa-2x"></i>
