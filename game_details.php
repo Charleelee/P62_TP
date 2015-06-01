@@ -1,5 +1,6 @@
 <?php
 #Init
+include('controller.php');
 include('assets/data/arrays.php');
 $gameId = array_key_exists('game', $_GET) ? $_GET['game'] : null;
 
@@ -25,7 +26,6 @@ $gameId = array_key_exists('game', $_GET) ? $_GET['game'] : null;
 		<?php endforeach ?>
 	</div>
 <?php
-var_dump($_GET['game']);
 include('footer.php');
 ?>
 </body>
