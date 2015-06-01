@@ -1,5 +1,6 @@
 <?php
 #Init
+include('controller.php');
 include('assets/data/arrays.php');
 $gameId = array_key_exists('game', $_GET) ? $_GET['game'] : null;
 
