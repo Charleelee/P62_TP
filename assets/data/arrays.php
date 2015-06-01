@@ -1,84 +1,63 @@
 <?php
 //Array pour la page index.php
 $index_gamesArticles =array(
-	'The witcher' => array(
-		'rpg' => array(
-			'20$' => array(
-				'index_vg_01' => array(
-					'assets/img/witcher_big.jpg' => array(
-						'?game=witcher' => 'big'
-					),
-				),
-			),
+	'vg_01' => array(
+			'title' => 'The Witcher',
+			'genre' => 'rpg',
+			'price' => '20$',
+			'img' => 'assets/img/witcher_big.jpg',
+			'url' => '?game=witcher',
+			'size' => 'big',
 		),
-	),
-	'Invisible' => array(
-		'fps' => array(
-			'10$' => array(
-				'index_vg_02' => array(
-					'assets/img/invisible_small.jpg' => array(
-						'?game=invisible' => 'medium'
-					),
-				),
-			),
+	'vg_33' => array(
+			'title' => 'Invisible',
+			'genre' => 'fps',
+			'price' => '10$',
+			'img' => 'assets/img/invisible_small.jpg',
+			'url' => '?game=invisible',
+			'size' => 'medium',
 		),
-	),
-	'Metro redux' => array(
-		'fps' => array(
-			'40$' => array(
-				'index_vg_03' => array(
-					'assets/img/metro_small.jpg' => array(
-						'?game=metro' => 'small'
-					),
-				),
-			),
+	'vg_34' => array(
+			'title' => 'Metro redux',
+			'genre' => 'fps',
+			'price' => '40$',
+			'img' => 'assets/img/metro_small.jpg',
+			'url' => '?game=metro',
+			'size' => 'small',
 		),
-	),
-	'Games of Thrones' => array(
-		'aventure' => array(
-			'40$' => array(
-				'index_vg_04' => array(
-					'assets/img/got_small.jpg' => array(
-						'?game=got' => 'small'
-					),
-				),
-			),
+	'vg_35' => array(
+			'title' => 'Games of Thrones',
+			'genre' => 'adventure',
+			'price' => '40$',
+			'img' => 'assets/img/got_small.jpg',
+			'url' => '?game=got',
+			'size' => 'small',
 		),
-	),
-	'Rebuild3' => array(
-		'aventure' => array(
-			'30$' => array(
-				'index_vg_05' => array(
-					'assets/img/rebuild_small.jpg' => array(
-						'?game=rebuild' => 'small'
-					),
-				),
-			),
+	'vg_36' => array(
+			'title' => 'Rebuild3',
+			'genre' => 'adventure',
+			'price' => '30$',
+			'img' => 'assets/img/rebuild_small.jpg',
+			'url' => '?game=rebuild',
+			'size' => 'small',
 		),
-	),
-	'Dragon age' => array(
-		'rpg' => array(
-			'60$' => array(
-				'index_vg_06' => array(
-					'assets/img/dragon_small.jpg' => array(
-						'?game=dragon' => 'small'
-					),
-				),
-			),
+	'vg_37' => array(
+			'title' => 'Dragon Age',
+			'genre' => 'rpg',
+			'price' => '60$',
+			'img' => 'assets/img/dragon_small.jpg',
+			'url' => '?game=dragon',
+			'size' => 'small',
 		),
-	),
-	'Borderlands : Pre sequel' => array(
-		'fps' => array(
-			'40$' => array(
-				'index_vg_07' => array(
-					'assets/img/bdlands_small.jpg' => array(
-						'?game=got' => 'small'
-					),
-				),
-			),
+	'vg_30' => array(
+			'title' => 'Borderlands : Pre Sequel',
+			'genre' => 'fps',
+			'price' => '25$',
+			'img' => 'assets/img/bdlands_small.jpg',
+			'url' => '?game=borderlands',
+			'size' => 'small',
 		),
-	),
-);
+	);
 
 //Array pour la page games
 $games_gamesArticles = array(
@@ -306,5 +285,39 @@ $games_gamesArticles = array(
 				'img' => 'assets/img/gangsters_small.jpg',
 				'url' => '?game=gangsters',
 			),
+		'vg_33' => array(
+				'title' => 'Invisible',
+				'genre' => 'fps',
+				'price' => '10$',
+				'img' => 'assets/img/invisible_small.jpg',
+				'url' => '?game=invisible',
+			),
+		'vg_34' => array(
+				'title' => 'Metro redux',
+				'genre' => 'fps',
+				'price' => '40$',
+				'img' => 'assets/img/metro_small.jpg',
+				'url' => '?game=metro',
+			),
+		'vg_35' => array(
+				'title' => 'Games of Thrones',
+				'genre' => 'adventure',
+				'price' => '40$',
+				'img' => 'assets/img/got_small.jpg',
+				'url' => '?game=got',
+			),
+		'vg_36' => array(
+				'title' => 'Rebuild3',
+				'genre' => 'adventure',
+				'price' => '30$',
+				'img' => 'assets/img/rebuild_small.jpg',
+				'url' => '?game=rebuild',
+			),
+		'vg_37' => array(
+				'title' => 'Dragon Age',
+				'genre' => 'rpg',
+				'price' => '60$',
+				'img' => 'assets/img/dragon_small.jpg',
+				'url' => '?game=dragon',
+			),
 		);
-
