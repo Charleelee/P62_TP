@@ -69,6 +69,9 @@ $games_gamesArticles = array(
 				'img' => 'assets/img/witcher_big.jpg',
 				'url' => '?game=witcher',
 				'id' => 'vg_01',
+				'description' => 'About: A truly next-generation role playing game combining a mature, non-linear story with a vast open world.
+						The Witcher 3: Wild Hunt, the RPG epic with a mature, non-linear story that reacts to your decisions, a vast open world with a living ecosystem, dynamic and tactical combat, and stunning visuals, is available on GOG.com!
+						We are part of the CD PROJEKT family, so buying here also gives you the chance to support us directly!',
 			),
 		'baldursgate' => array(
 				'title' => 'Baldurs Gate',
@@ -77,6 +80,9 @@ $games_gamesArticles = array(
 				'img' => 'assets/img/baldur_small.jpg',
 				'url' => '?game=baldursgate',
 				'id' => 'vg_02',
+				'description' => 'About: Includes Baldur\'s Gate II: Shadows of Amn and its expansion: Baldur\'s Gate II: Throne of Bhaal.
+						Will you resist the evil within you and forge a legend of heroic proportions? Or will you embrace your monstrous inner nature and carve a swath of destruction across the Realms? Your story begins anew in the exotic southern kingdom of Amn, amidst the opulence of the sinister capital city of Athkatla. Journey through the fierce, unforgiving wilderness of Amn in your quest for artifacts of awesome power and treasure of unfathomable wealth... Even challenge dragons, if you dare. Such is the life of a legend.
+						One of the greatest fantasy adventures continues! Return to the Forgotten Realms and once again lead the exciting life of an adventurer in this timeless Dungeons & Dragons cRPG classic!'
 			),
 		'neverwinter' => array(
 				'title' => 'Neverwinter Nights',
@@ -85,6 +91,9 @@ $games_gamesArticles = array(
 				'img' => 'assets/img/neverwinter_small.jpg',
 				'url' => '?game=neverwinter',
 				'id' => 'vg_03',
+				'description' => 'About: Experience one of the most popular role-playing adventures of our time, a journey that has thrilled millions. Inhabit dreamlike worlds of myth and mystery. Boundless lands of deadly creatures, foreboding omens and bold heroism.
+						This game puts you at the center of an epic tale of faith, war and betrayal, all the while staying true to the pen-and-paper role-playing tradition.
+						Neverwinter Nights - A world without limits!',
 			),
 		'dungeonkeeper2' => array(
 				'title' => 'Dungeon Keeper 2',
@@ -93,6 +102,8 @@ $games_gamesArticles = array(
 				'img' => 'assets/img/dungeonkeeper_small.jpg',
 				'url' => '?game=dungeonkeeper2',
 				'id' => 'vg_04',
+				'description' => 'About: It feels good to be bad, but it feels even better to be the embodiment of evil! Discover your evil side as you build your own underground kingdom. Carve out a living, breathing world and attract a host of devilish creatures to swell the ranks of your dark hoards. Form an alliance with the Horned Reaper and expand your empire in your quest to reach the daylight and invade the realms above.
+						Dungeon Keeper 2 is everything its predecessor was, only better and badder! It is probably one of the most addictive and fun games ever created; with tons of dark humor, smooth gameplay, and high replayability value. In addition to that there is a well designed multiplayer mode and a pet-dungeon module that tests your ability to build the ultimate underground labyrinth filled with traps, monsters, and other hellish devices. If you liked Dungeon Keeper you will love this ultimate installment of the Bullfrog series.',
 			),
 		'alphacentauri' => array(
 				'title' => 'Alpha Centauri',
@@ -101,6 +112,7 @@ $games_gamesArticles = array(
 				'img' => 'assets/img/alphacentauri_small.jpg',
 				'url' => '?game=alphacentauri',
 				'id' => 'vg_05',
+				'description' => 'About: Mankind begins its most monumental task – the colonization of space. A crew of internationally renowned scientists and security strategists, with wide-ranging convictions and diverse ethics, embarks on a mission that will change the world. One Planet. Seven unique factions. Which will you lead? Each faction has its own agenda, each leader a final goal. You must play to each strength and exploit each hidden weakness in your quest to rule the future.',
 			),
 		'dukenukem' => array(
 				'title' => 'Duke Nukem 3D',
@@ -109,6 +121,7 @@ $games_gamesArticles = array(
 				'img' => 'assets/img/dukenukem_small.jpg',
 				'url' => '?game=dukenukem',
 				'id' => 'vg_06',
+				'description'=> 'About: Duke Nukem, the politically incorrect celebrity and ultimate alien ass kicker, defends Earth and its babes from alien invasion. He is a can-do hero who realizes that sometimes innocent people have to die in order to save Earth, so accuracy of gun fire is not a real concern to him. This is the award-winning game that helped define the FPS genre and introduced unparalleled interactivity and a talking main character.',
 			),
 		'dragonshard' => array(
 				'title' => 'Dragon Shard',
