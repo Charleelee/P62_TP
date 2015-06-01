@@ -126,7 +126,7 @@ $games_gamesArticles = array(
 				'url' => '?game=postal2',
 			),
 		'vg_10' => array(
-				'title' => 'Unreal Tournament GOTY',
+				'title' => 'Unreal Tournament',
 				'genre' => 'fps',
 				'price' => '15$',
 				'img' => 'assets/img/unreal_small.jpg',
