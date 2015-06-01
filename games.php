@@ -5,6 +5,7 @@ include('assets/data/arrays.php');
 #Boucle de recupération de données stocké dans l'array qui va generer des articles (template)
 #En prennant les clé / value du tableau comme paramètre
 
+$selectionGenre = array_key_exists('genre', $_GET) ? $_GET['genre'] : null;
 
 ?>
 <html>
@@ -15,6 +16,7 @@ include('assets/data/arrays.php');
 	<nav>
 		<ul>
 			<li><img src="assets/img/icon/search7.png" alt="icon" width="35px">Search</li>
+			<li><a href="?">ALL</a></li>
 			<li><a href="?genre=fps">FPS</a></li>
 			<li><a href="?genre=strategy">Strategy</a></li>
 			<li><a href="?genre=rpg">RPG</a></li>
@@ -23,6 +25,7 @@ include('assets/data/arrays.php');
 	</nav>
 	<section>
 		<?php foreach ($games_gamesArticles as $key => $v): ?>
+			<?php if (($selectionGenre == null) || ($selectionGenre == $v['genre'])): ?>
 			<a class="<?php echo $v['genre'] ?>" href="<?php echo $v['genre'] ?>">
 				<article class="game_product" id="<?php echo $key ?>">
 					<img class="product_img" src="<?php echo $v['img'] ?>" alt='image'>
@@ -30,6 +33,7 @@ include('assets/data/arrays.php');
 					<span class="product_price"><?php echo $v['price'] ?></span>
 				</article>
 			</a>
+			<?php endif ?>
 		<?php endforeach ?>
 	</section>
 	</div>
