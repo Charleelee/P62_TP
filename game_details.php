@@ -30,6 +30,7 @@ include('assets/data/database_link.php');
 			</aside>
 		<?php endif ?>
 		<?php endif ?>
+		<?php var_dump($game) ?>
 	</div>
 <?php
 include('footer.php');

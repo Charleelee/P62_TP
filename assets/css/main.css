@@ -207,3 +207,21 @@ article:hover > span {
     top:610px;
     width:221px;
 }
+
+/* CSS SECTION FOOTER */
+
+.footerTop {
+    text-align: center;
+}
+
+.footerTop ul {
+    display: inline-block;
+}
+
+.footerMidle {
+    text-align: center;
+}
+
+.footerMidle ul {
+    display: block;
+}
