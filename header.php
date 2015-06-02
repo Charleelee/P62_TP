@@ -16,11 +16,12 @@ $nb_item = isset($_SESSION['CART']) ? count($_SESSION['CART']) : 0;
 			<div id="cart_icon"	>
 				<i class="fa fa-shopping-cart
 			fa-2x"></i>
-			<span id="cart_items"><?php echo $nb_item ?></span></li>
-			</div>
-			<li id="fb"><a href="http://www.facebook.com"><img src="assets/img/social/social21.png" alt="logo" width="35px"></a></li>
-			<li id="twitter"><a href="http://www.twitter.com"><img src="assets/img/social/social38.png" alt="logo" width="35px"></a></li>
-			<li id="insta" ><a href="http://www.instagram.com"><img src="assets/img/social/social77.png" alt="logo" width="35px"></a></li>
+			<span id="cart_items"><?php echo $nb_item ?></span>
+			</div></li>
+			<li><?php
+				if (isset($_SESSION)) {
+					include('_formulairelogin.php') ;
+				}?></li>
 		</ul>
 	</nav>
 </header>
