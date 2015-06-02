@@ -1,8 +1,5 @@
 <?php
-if(($_SERVER['PHP_SELF']=="/P62_TP/cart.php")&&(isset($_GET['url']))&&(!isset($_SESSION)))  {
-	session_start();
-}
-$nb_item = isset($_SESSION['CART']) ? count($_SESSION['CART']) : 0;
+$nb_item = 0;
 ?>
 
 <header>
