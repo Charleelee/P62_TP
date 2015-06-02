@@ -5,7 +5,7 @@ a {
 }
 
 body {
-    background: linear-gradient(#608ba8, #dcdcdc);
+    background: linear-gradient(#202C34, #7A7A7A);
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -102,30 +102,23 @@ li:hover a{
     color: #656565;
     width:20px;
 }
-.fa-facebook-official {
-    color : #0c2683;
-}
 
-.fa-twitter {
-    color : #00c6ff;
-}
+/* CSS search Nav de la page game */
 
-.fa-instagram{
-    color:#517fa4;
+.searchBar {
+    margin: 0 auto;
 }
 
 /* CSS pour les <article> de la page game */
 .product, .game_product {
     display:inline-block;
-    margin-right:5px;
-    margin-bottom: 5px;
 }
 
 .game_product{
     background: url("../img/platform.png");
     width:215px;
     height:150px;
-    margin-right: 20px;
+    margin: 10px;
 }
 
 .game_product > h3 {
@@ -136,15 +129,16 @@ li:hover a{
 
 .product_price {
     position: relative;
-    left:175px;
-    bottom:3px;
+    left:180px;
+    bottom:10px;
     border: solid black 1px;
     border-radius: 4px;
     padding:2px 6px;
     background-color: #d5d5d5;
     color: #686868;
-    font-size: 10px;
+    font-size: 12px;
 }
+
 article > .product_img {
     width:215px;
     height:100px;
@@ -163,7 +157,7 @@ article:hover > span {
 /* CSS des jeux de la page d'accueil */
 
 #game_wrapper, #content_wrapper{
-    margin-left:80px;
+    margin: 0 auto;
     width:1200px;
 }
 
@@ -239,18 +233,73 @@ input#email{
 
 /* CSS SECTION FOOTER */
 
-.footerTop {
+footer {
     text-align: center;
+}
+
+.footerTop {
+    background: #262626;
+    margin-top: 40px;
+    height: 60px;
 }
 
 .footerTop ul {
     display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    margin: 22px 0 0 0;
+}
+
+.footerTop ul li {
+    display: inline-block;
+}
+
+.footerTop ul li a {
+    color: #696969;
 }
 
 .footerMidle {
-    text-align: center;
+    background: #262626;
+    border-top: 1px solid #373737;
 }
 
 .footerMidle ul {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    margin: 10px;
+}
+
+.footerMidle ul li a {
+    color: #696969;
+}
+
+.footerButtons {
+    background: #262626;
+}
+
+.footerButtons ul li {
+    display: inline-block;
+    margin: 5px 20px 5px 20px;
+}
+
+.footerButtons ul li a {
+    color: #696969;
+    margin: auto 10px auto 10px;
+    vertical-align: top;
+}
+
+.footerButtons ul li a img {
+    width: 20px;
+    padding-right: 10px;
+}
+
+.footerBottom {
+    background: #1d1d1d;
+}
+
+.footerBottom p {
+    margin: 0;
+    color: #696969;
+    height: 50px;
 }

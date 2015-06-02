@@ -2,7 +2,8 @@
 #Init
 include('assets/data/database_link.php');
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <?php include ('html_head.php'); ?>
 <body>
 <?php include ('header.php'); ?>
