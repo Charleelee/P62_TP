@@ -2,7 +2,6 @@
 if(($_SERVER['PHP_SELF']=="/P62_TP/cart.php")&&(isset($_GET['url']))&&(!isset($_SESSION)))  {
 	session_start();
 }
-var_dump(isset($_SESSION));
 $nb_item = isset($_SESSION['CART']) ? count($_SESSION['CART']) : 0;
 ?>
 

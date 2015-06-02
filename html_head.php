@@ -1,4 +1,4 @@
-<head lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="author" content="Jorel Amthor & Charles-Élie Bédard">
     <title>Achats jeux videos</title>
