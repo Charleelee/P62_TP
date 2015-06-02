@@ -241,16 +241,48 @@ input#email{
 
 .footerTop {
     text-align: center;
+    background: #262626;
 }
 
 .footerTop ul {
     display: inline-block;
+    list-style: none;
+}
+
+.footerTop ul li a {
+    color: #696969;
 }
 
 .footerMidle {
     text-align: center;
+    background: #262626;
 }
 
 .footerMidle ul {
     display: block;
+    list-style: none;
+}
+
+.footerMidle ul li a {
+    color: #696969;
+}
+
+.footerButtons {
+    text-align: center;
+}
+
+.footerButtons li {
+    display: inline-block;
+}
+
+.footerButtons li a {
+    color: #696969;
+}
+
+.footerButtons li a img {
+    width: 20px;
+}
+
+.footerBottom {
+    background: #1d1d1d;
 }

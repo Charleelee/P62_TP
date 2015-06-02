@@ -8,7 +8,7 @@ $nb_item = isset($_SESSION['CART']) ? count($_SESSION['CART']) : 0;
 <header>
 	<nav id="navibarre">
 		<ul>
-			<li id="logo"><img class="logo" src="assets/img/logo.png"/></li>
+			<li id="logo"><img class="logo" src="assets/img/logo.png" alt="logo"/></li>
 			<li><a href="index.php">Acceuil</a></li>
 			<li><a href="games.php">Jeux</a></li>
 			<li id="cart"><a href="cart.php">Mon panier</a>
