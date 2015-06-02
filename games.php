@@ -28,7 +28,7 @@ include('assets/data/database_link.php');
 	}
 	foreach ($games as $key => $v): ?>
 		<a class="<?php echo $v['genre'] ?>" href="game_details.php?url=<?php echo $v['url'] ?>">
-			<article class="game_product" id="<?php echo $key ?>">
+			<article class="game_product" id="<?php echo $v['id'] ?>">
 				<img class="product_img" src="<?php echo $v['img'] ?>" alt='image'>
 				<h3><?php echo $v['title'] ?></h3>
 				<span class="product_price"><?php echo $v['price'] ?></span>
