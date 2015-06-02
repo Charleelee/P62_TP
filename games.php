@@ -3,6 +3,9 @@
 include('assets/data/database_link.php');
 //Boucle de recupération de données stocké dans l'array qui va generer des articles (template)
 //En prennant les clé / value du tableau comme paramètre
+session_start();
+var_dump($_SESSION);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

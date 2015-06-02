@@ -15,9 +15,7 @@ $nb_item = 0;
 				</span>
 			</li>
 			<li><a href="inscription.php">Inscrivez-vous</a></li>
-			<li id="login_li"><?php
-
-				include('_formulairelogin.php') ?></li>
+			<li id="login_li"><?php include_once('_loginform.php') ?></li>
 		</ul>
 	</nav>
 </header>
