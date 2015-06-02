@@ -255,7 +255,10 @@ footer {
 }
 
 .footerTop ul li a {
-    color: #696969;
+    color: #909090;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 20px 0 20px;
 }
 
 .footerMidle {
@@ -296,10 +299,10 @@ footer {
 
 .footerBottom {
     background: #1d1d1d;
+    height: 50px;
 }
 
 .footerBottom p {
     margin: 0;
     color: #696969;
-    height: 50px;
 }

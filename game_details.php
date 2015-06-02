@@ -24,12 +24,9 @@ include('assets/data/database_link.php');
 			</article>
 			<aside>
 				<span><?php echo $game['price'] ?></span>
-				<form method="get" action="cart.php">
-					<button>ADD TO CART</button>
-					<input type="hidden" name="game" value="<?php echo $_GET['url']?>" />
-				</form>
+				<a href="cart.php?action=add&game=<?php echo $_GET['url']?>">ADD TO CART</a>
 			</aside>
-		<?php endif ?>
+		<?php 	endif ?>
 		<?php endif ?>
 		<?php var_dump($game) ?>
 	</div>
