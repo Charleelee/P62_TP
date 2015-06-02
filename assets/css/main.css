@@ -12,7 +12,7 @@ body {
 #navibarre > ul {
     position: relative;
     padding: 0;
-    height: 55px;
+    height: 65px;
     margin-top: 0px;
 }
 #navibarre > ul >li {
@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 45px;
+    height: 55px;
 }
 
 /* CSS de la navigation */
@@ -47,7 +47,13 @@ nav {
 }
 
 #navibarre > ul > li {
-    width:323px;
+    width:200px;
+}
+
+#navibarre > ul > li#login_li{
+    width:298px;
+    padding-bottom: 5px;
+    border-right:none;
 }
 
 #navibarre > ul > li#logo {
@@ -58,8 +64,8 @@ nav {
 
 #navibarre > ul > li#cart {
     box-sizing: border-box;
-    height:55px;
-    padding-top:18px;
+    height:65px;
+    padding-top:22px;
 }
 
 #navibarre > ul > li#fb{
@@ -107,8 +113,8 @@ li:hover a{
 
 #cart_icon {
     position: relative;
-    top:-15px;
-    left:220px;
+    top:-18px;
+    left:130px;
     color: #656565;
     width:20px;
 }
