@@ -78,7 +78,7 @@ $games_gamesArticles = array(
 				'genre' => 'rpg',
 				'price' => '30$',
 				'img' => 'assets/img/baldur_small.jpg',
-				'url' => '?game=baldursgate',
+    				'url' => '?game=baldursgate',
 				'id' => 'vg_02',
 				'description' => 'About: Includes Baldur\'s Gate II: Shadows of Amn and its expansion: Baldur\'s Gate II: Throne of Bhaal.
 						Will you resist the evil within you and forge a legend of heroic proportions? Or will you embrace your monstrous inner nature and carve a swath of destruction across the Realms? Your story begins anew in the exotic southern kingdom of Amn, amidst the opulence of the sinister capital city of Athkatla. Journey through the fierce, unforgiving wilderness of Amn in your quest for artifacts of awesome power and treasure of unfathomable wealth... Even challenge dragons, if you dare. Such is the life of a legend.

@@ -58,14 +58,18 @@ nav {
 #navibarre > ul > li#fb{
     padding-top:10px;
     border-left: solid rgba(128, 128, 128, 0.50) 2px;
+    border-right:none;
 }
 
 #navibarre > ul > li#fb, #navibarre > ul > li#twitter,#navibarre > ul > li#insta{
     width:10px;
-    border: none;
     padding:10px 50px 0 20px;
     background-color: inherit;
     display:list-item;
+}
+
+#navibarre > ul > li#twitter, #navibarre > ul > li#insta {
+    border:none;
 }
 
 #logo:hover{
