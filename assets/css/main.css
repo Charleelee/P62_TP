@@ -239,14 +239,25 @@ input#email{
 
 /* CSS SECTION FOOTER */
 
-.footerTop {
+footer {
     text-align: center;
+}
+
+.footerTop {
     background: #262626;
+    margin-top: 40px;
+    height: 60px;
 }
 
 .footerTop ul {
     display: inline-block;
+    vertical-align: top;
     list-style: none;
+    margin: 0;
+}
+
+.footerTop ul li {
+    display: inline-block;
 }
 
 .footerTop ul li a {
@@ -254,13 +265,15 @@ input#email{
 }
 
 .footerMidle {
-    text-align: center;
     background: #262626;
+    border-top: 1px solid #373737;
 }
 
 .footerMidle ul {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     list-style: none;
+    margin: 0;
 }
 
 .footerMidle ul li a {
@@ -268,21 +281,27 @@ input#email{
 }
 
 .footerButtons {
-    text-align: center;
+    background: #262626;
 }
 
-.footerButtons li {
+.footerButtons ul li {
     display: inline-block;
 }
 
-.footerButtons li a {
+.footerButtons ul li a {
     color: #696969;
 }
 
-.footerButtons li a img {
+.footerButtons ul li a img {
     width: 20px;
 }
 
 .footerBottom {
     background: #1d1d1d;
+}
+
+.footerBottom p {
+    margin: 0;
+    color: #696969;
+    height: 50px;
 }

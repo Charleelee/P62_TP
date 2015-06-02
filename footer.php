@@ -1,5 +1,4 @@
 <footer>
-	<!-- Background-color rbg(38,38,38) -->
 	<div class="footerTop">
 		<ul>
 			<li><a href="#">REDEEM CODE</a></li>
@@ -42,19 +41,20 @@
 			<li><a href="#">Forums</a></li>
 			<li><a href="#">Community Wishlist</a></li>
 		</ul>
-		<ul class="footerButtons">
-			<li><a href="#"><img src="assets/img/social/social21.png" alt="logo">Facebook</a></li>
-			<li><a href="#"><img src="assets/img/social/social38.png" alt="logo">Twitter</a></li>
-			<li><a href="#"><img src="assets/img/social/social5.png" alt="logo">Google+</a></li>
-			<li><a href="#"><img src="assets/img/social/social77.png" alt="logo">Instagram</a></li>
-			<li><a href="#"><img src="assets/img/social/youtube4.png" alt="logo">YouTube</a></li>
-			<li><a href="#"><img src="assets/img/social/vimeo2.png" alt="logo">Vimeo</a></li>
-			<li><a href="#"><img src="assets/img/social/social68.png" alt="logo">RSS</a></li>
-			<li><a href="#"><img src="assets/img/social/share16.png" alt="logo">Share</a></li>
-		</ul>
+		<div class="footerButtons">
+			<ul>
+				<li><a href="#"><img src="assets/img/social/social21.png" alt="logo">Facebook</a></li>
+				<li><a href="#"><img src="assets/img/social/social38.png" alt="logo">Twitter</a></li>
+				<li><a href="#"><img src="assets/img/social/social5.png" alt="logo">Google+</a></li>
+				<li><a href="#"><img src="assets/img/social/social77.png" alt="logo">Instagram</a></li>
+				<li><a href="#"><img src="assets/img/social/youtube4.png" alt="logo">YouTube</a></li>
+				<li><a href="#"><img src="assets/img/social/vimeo2.png" alt="logo">Vimeo</a></li>
+				<li><a href="#"><img src="assets/img/social/social68.png" alt="logo">RSS</a></li>
+				<li><a href="#"><img src="assets/img/social/share16.png" alt="logo">Share</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="footerBottom">
-		<!-- Background-color rbg(89,89,89) -->
 		<p>Legal</p>
 	</div>
 </footer>
