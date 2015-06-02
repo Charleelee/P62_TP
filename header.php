@@ -3,8 +3,11 @@
 session_start();
 if (isset($_SESSION['cart'])) {
 	foreach($_SESSION['cart'] as $game=>$qty) {
-		var_dump($qty);
+
 	}
+}
+else {
+	$qty=0;
 }
 ?>
 <header>

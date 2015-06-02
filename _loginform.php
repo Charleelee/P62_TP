@@ -1,4 +1,4 @@
-<?php
+<?php function redirect_index(){ header('location:index.php'); }
 $user_is_connected = isset($_SESSION['user-info']);
 $user_want_to_disconnect = isset($_POST['disconnect']);
     ?>
@@ -13,6 +13,9 @@ $user_want_to_disconnect = isset($_POST['disconnect']);
             <?php
             if ($user_want_to_disconnect){
                 unset($_SESSION['user-info']);
+                unset($_SESSION['cart']);
+                redirect_index();
+
             }
             ?>
         <?php } else { ?>

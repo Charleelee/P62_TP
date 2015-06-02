@@ -1,5 +1,5 @@
 <?php function redirect(){ header('location:games.php'); }
-session_start();
+include('header.php');
     $username = isset($_GET['pseudo']) ? $_GET['pseudo'] : "";
     $password = isset($_GET['pass']) ? $_GET['pass'] : "";
     $nom = isset($_GET['nom']) ? $_GET['nom'] : "";
