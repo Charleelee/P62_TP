@@ -11,18 +11,16 @@ include('assets/data/database_link.php');
 <body>
 <?php include ('header.php');
 
-$game_name = isset($_GET['url']) ? $_GET['url'] : null;
-$games = getGames();
-foreach($games as $key => $value){
-    if($key == $game_name){
-        $_SESSION['CART'][$key] = $value;
-    }
-}
+$game_name = getOneGame($_GET['game']);
+$_SESSION['CART'][$game_name]=0;
+
+$_SESSION['CART']=$game_name;
+
 ?>
 <div id="game_wrapper">
     <ul>
         <li><?php
-            foreach($_SESSION['CART'] as $game => $info){
+            foreach($_SESSION['CART'][1] as $game => $info){
                 echo"<span>Nom:",$info['title'],"Prix:",$info['price'],"</span>";
             }
             ?></li>
