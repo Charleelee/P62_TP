@@ -10,7 +10,7 @@ include('assets/data/database_link.php');
 <body>
 <?php include ('header.php'); ?>
 	<div id="content_wrapper">
-	<nav>
+	<nav class="searchBar">
 		<ul>
 			<li><img src="assets/img/icon/search7.png" alt="icon" width="35px" height="30px">Search</li>
 			<li><a href="?">ALL</a></li>
