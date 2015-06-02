@@ -6,9 +6,9 @@ $nb_item = 1;
 	<nav id="navibarre">
 		<ul>
 			<li id="logo"><img class="logo" src="assets/img/logo.png"/></li>
-			<li><a href="?page=index">Acceuil</a></li>
-			<li><a href="?page=game">Jeux</a></li>
-			<li id="cart"><a href="?page=cart">Mon panier</a>
+			<li><a href="index.php">Acceuil</a></li>
+			<li><a href="games.php">Jeux</a></li>
+			<li id="cart"><a href="cart.php">Mon panier</a>
 			<div id="cart_icon"	>
 				<i class="fa fa-shopping-cart
 			fa-2x"></i>
