@@ -68,23 +68,6 @@ nav {
     padding-top:22px;
 }
 
-#navibarre > ul > li#fb{
-    padding-top:10px;
-    border-left: solid rgba(128, 128, 128, 0.50) 2px;
-    border-right:none;
-}
-
-#navibarre > ul > li#fb, #navibarre > ul > li#twitter,#navibarre > ul > li#insta{
-    width:10px;
-    padding:10px 50px 0 20px;
-    background-color: inherit;
-    display:list-item;
-}
-
-#navibarre > ul > li#twitter, #navibarre > ul > li#insta {
-    border:none;
-}
-
 #logo:hover{
     background-color: #ba0101;
     transition: background-color 300ms linear;
@@ -219,6 +202,38 @@ article:hover > span {
     font-size: 15px;
     top:610px;
     width:221px;
+}
+
+/* CSS de la page d'inscription */
+
+form#inscription_form{
+    width:300px;
+    margin:0 auto;
+}
+
+input#pseudo{
+    width:213px;
+}
+
+input#pwrd{
+    width: 175px;
+}
+
+input#name{
+    width:229px;
+}
+
+input#f_name{
+    width:165pX;
+}
+
+input#email{
+    width:225px;
+}
+
+#user_info > input[type=submit]{
+    margin-top:20px;
+    margin-left:100px;
 }
 
 /* CSS SECTION FOOTER */
