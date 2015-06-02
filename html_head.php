@@ -1,5 +1,3 @@
-<?php
-echo'
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="author" content="Jorel Amthor & Charles-Élie Bédard">
@@ -10,4 +8,3 @@ echo'
     type="text/css"/>
     <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
 </head>
-';

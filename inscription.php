@@ -2,13 +2,14 @@
 <html>
 <?php include ('html_head.php'); ?>
 <body>
-<?php include ('header.php'); ?>
+<?php include ('header.php');
+?>
 <form id="inscription_form" name="inscription_form" method="get" action="cart.php">
     <fieldset id="login_info">
         <label for="pseudo">Pseudo :</label>
-            <input type="text" id="pseudo">
+            <input type="text" name="pseudo" id="pseudo">
         <label for="pwrd">Mot de passe :</label>
-            <input type="text" id="pwrd">
+            <input type="text" name="pass" id="pwrd">
     </fieldset>
     <fieldset id="user_info">
         <label for="name">Nom :</label>
