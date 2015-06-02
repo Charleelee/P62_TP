@@ -1,8 +1,5 @@
 <?php
 #init 
-//init session
-session_start();
-
 include('assets/data/database_link.php');
 //Boucle de recupération de données stocké dans l'array qui va generer des articles de l'index (template)
 //En prennant les clé / value du tableau comme paramètre
