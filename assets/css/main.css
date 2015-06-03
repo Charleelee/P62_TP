@@ -270,6 +270,7 @@ input#email{
 
 .game-detail-article {
     height: 100%;
+    padding: 50px;
     background: url("../img/platform.png");
 }
 
@@ -277,6 +278,20 @@ input#email{
     width: 350px;
 }
 
+.add-cart {
+    border: solid black 1px;
+    border-radius: 4px;
+    padding:2px 6px;
+    background-color: #d5d5d5;
+    color: #686868;
+    width: 115px;
+}
+
+.add-cart:hover {
+    background: linear-gradient(to bottom,#9fbf00,#80ab00);
+    color:#fff
+}
+    
 /* CSS SECTION FOOTER */
 
 footer {

@@ -21,10 +21,10 @@ include('assets/data/database_link.php');
 				<img class="game-detail-img" src="<?php echo $game['img'] ?>" alt="image">
 				<h3>Description</h3>
 				<p><?php echo $game['description'] ?></p>
-				<aside>
+				<div class="add-cart">
 					<span><?php echo $game['price'].'$' ?></span>
 					<a href="cart.php?action=add&game=<?php echo $_GET['url']?>">ADD TO CART</a>
-				</aside>
+				</div>
 				<?php 
 					$i = 0;
 					$games = getGames(); 
@@ -36,10 +36,10 @@ include('assets/data/database_link.php');
 						<article class="game_product" id="<?php echo $v['id'] ?>">
 							<img class="product_img" src="<?php echo $v['img'] ?>" alt='image'>
 							<h3><?php echo $v['title'] ?></h3>
-							<span class="product_price"><?php echo $v['price'] ?></span>
+							<span class="product_price"><?php echo $v['price'].'$' ?></span>
 						</article>
 					</a>
-					<?php if ($i == 5) {
+					<?php if ($i == 4) {
 						break;
 					} ?>
 				<?php endforeach ?>
