@@ -16,9 +16,12 @@ if(isset($_GET)&&(isset($_GET['error']))){
             $error = 'Votre pseudo doit faire entre 3 et 10 caractères !';
             break;
         case'04':
-            $error='Votre mot de passe doit faire entre 2 et 8 caractères!';
+            $error ='Votre mot de passe doit contenir au minimum 2 chiffres !';
             break;
         case'05':
+            $error='Votre mot de passe doit faire entre 4 et 10 caractères!';
+            break;
+        case'06':
             $error = 'Vos mot de passe ne correspondent pas !';
             break;
     }
