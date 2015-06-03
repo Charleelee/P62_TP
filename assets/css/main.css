@@ -291,7 +291,30 @@ input#email{
     background: linear-gradient(to bottom,#9fbf00,#80ab00);
     color:#fff
 }
-    
+
+/* CSS SECTION CART */
+
+.cart-page-section {
+    height: 600px;
+    padding: 50px;
+    background: url("../img/platform.png");
+} 
+
+table {
+    border: none;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+th,td {
+    padding: 5px;
+    border: 1px solid #373737;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+} 
+
 /* CSS SECTION FOOTER */
 
 footer {

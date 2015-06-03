@@ -54,21 +54,23 @@ if(!isset($_SESSION['login-status'])){
     <?php 
     $subTotal = 0;
     if (sizeof($_SESSION['cart']) > 0): ?>
-    <ul>
+    <section class="cart-page-section">
+    <table>
+ 	
     	<?php foreach($_SESSION['cart'] as $game=>$qty) { 
     		//get game data
     		$gameData = getOneGame($game);
     		$subTotal += $gameData['price'] * $qty;
     	?>
-    	<li><?php echo $gameData['title'] ?> ( <?php echo $gameData['price'] ?> $) x <?php echo $qty?> &nbsp; <a href="cart.php?action=remove&game=<?php echo $game ?>">Moins un</a></li>
+    	<tr><td><?php echo $gameData['title'] ?> ( <?php echo $gameData['price'] ?> $) x <?php echo $qty?></td><td> &nbsp; <a href="cart.php?action=remove&game=<?php echo $game ?>">Remove</a></td></tr>
 		<?php } ?>
-    </ul>
-	
-
-	<p>Subtotal: <?php echo $subTotal ?></p>
+    
+    </table>
+	<p>Subtotal: <?php echo $subTotal.'$' ?></p>
 	<?php else: ?>
 		<p>Le panier est vide</p>
 	<?php endif ?>
+	</section>
 </div>
 <?php
 include('footer.php');
