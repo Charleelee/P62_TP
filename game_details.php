@@ -22,9 +22,27 @@ include('assets/data/database_link.php');
 				<h3>Description</h3>
 				<p><?php echo $game['description'] ?></p>
 				<aside>
-					<span><?php echo $game['price'] ?></span>
+					<span><?php echo $game['price'].'$' ?></span>
 					<a href="cart.php?action=add&game=<?php echo $_GET['url']?>">ADD TO CART</a>
 				</aside>
+				<?php 
+					$i = 0;
+					$games = getGames(); 
+				?>
+				<h4>More games to choose from...</h4>
+				<?php foreach ($games as $key => $v): ?>
+					<?php $i++; ?>
+					<a class="<?php echo $v['genre'] ?>" href="game_details.php?url=<?php echo $v['url'] ?>">
+						<article class="game_product" id="<?php echo $v['id'] ?>">
+							<img class="product_img" src="<?php echo $v['img'] ?>" alt='image'>
+							<h3><?php echo $v['title'] ?></h3>
+							<span class="product_price"><?php echo $v['price'] ?></span>
+						</article>
+					</a>
+					<?php if ($i == 5) {
+						break;
+					} ?>
+				<?php endforeach ?>
 			</article>
 		<?php 	endif ?>
 		<?php endif ?>
