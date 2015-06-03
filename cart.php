@@ -23,7 +23,7 @@ if (isset($_GET['action'])) {
 			$game = getOneGame($_GET['game']);
 			//on sassure que le jeu a ete trouve
 			if ($game == null) break;
-			
+
 			//on ajoute le jeu au cart
 			if (!isset($_SESSION['cart'][$_GET['game']])) $_SESSION['cart'][$_GET['game']] = 0;
 
@@ -41,9 +41,9 @@ if (isset($_GET['action'])) {
 			//on enleve un exemplaire du jeu au cart
 			if (isset($_SESSION['cart'][$_GET['game']])) {
 				if ($_SESSION['cart'][$_GET['game']] > 0) $_SESSION['cart'][$_GET['game']]--;
-				
+
 				if ($_SESSION['cart'][$_GET['game']] == 0) unset($_SESSION['cart'][$_GET['game']]);
-			} 
+			}
 	}
 }
 

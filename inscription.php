@@ -4,6 +4,7 @@
 ?>
 <body>
 <?php include ('header.php');
+
 ?>
 <form id="inscription_form" name="inscription_form" method="get" action="_add_user.php">
     <fieldset id="login_info">

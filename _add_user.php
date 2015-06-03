@@ -1,4 +1,4 @@
-<?php function redirect(){ header('location:games.php'); }
+<?php $redirect=header('location:games.php');
 include('header.php');
     $username = isset($_GET['pseudo']) ? $_GET['pseudo'] : "";
     $password = isset($_GET['pass']) ? $_GET['pass'] : "";
@@ -7,7 +7,7 @@ include('header.php');
     $email = isset($_GET['email']) ? $_GET['email'] : "";
 
     $_SESSION['user-info'][$username] = $password;
-    redirect();
+    $redirect;
 
 //array_merge($user_array,$client_array);
 //

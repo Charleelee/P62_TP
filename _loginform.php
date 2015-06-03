@@ -1,10 +1,17 @@
-<?php function redirect_index(){ header('location:index.php'); }
-$user_is_connected = isset($_SESSION['user-info']);
+<?php function redirect($url){ header("location:$url"); }
+
+$user_is_trying_to_connect = isset($_POST['connect']);
+$user_is_connected = isset($_SESSION['login-status']);
 $user_want_to_disconnect = isset($_POST['disconnect']);
+
+if($user_is_trying_to_connect){
+    $_SESSION['login-status']='logged';
+    redirect($_SERVER['PHP_SELF']);
+}
     ?>
     <div id="login_logout_form">
         <?php if ($user_is_connected) { ?>
-            <span><?php foreach($_SESSION['user-info'] as $key){
+            <span><?php foreach($_SESSION['user-info'] as $key => $value){
                     echo $key;
                 } ; ?></span>
             <form method="post">
@@ -12,10 +19,9 @@ $user_want_to_disconnect = isset($_POST['disconnect']);
             </form>
             <?php
             if ($user_want_to_disconnect){
-                unset($_SESSION['user-info']);
+                unset($_SESSION['login-status']);
                 unset($_SESSION['cart']);
-                redirect_index();
-
+                redirect('index.php');
             }
             ?>
         <?php } else { ?>

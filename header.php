@@ -2,8 +2,12 @@
 //init session
 session_start();
 if (isset($_SESSION['cart'])) {
-	foreach($_SESSION['cart'] as $game=>$qty) {
+	if(count($_SESSION['cart'])==0){
+		$qty=0;
+	}else {
+		foreach ($_SESSION['cart'] as $game => $qty) {
 
+		}
 	}
 }
 else {
