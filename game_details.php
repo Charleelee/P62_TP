@@ -16,19 +16,18 @@ include('assets/data/database_link.php');
 				if ($game == null): ?>
 					<h1>Cet article n'existe pas</h1>
 		<?php 	else: ?>
-			<article>
+			<article class="game-detail-article">
 				<h1><?php echo $game['title'] ?></h1>
-				<img src="<?php echo $game['img'] ?>" alt="image">
+				<img class="game-detail-img" src="<?php echo $game['img'] ?>" alt="image">
 				<h3>Description</h3>
 				<p><?php echo $game['description'] ?></p>
+				<aside>
+					<span><?php echo $game['price'] ?></span>
+					<a href="cart.php?action=add&game=<?php echo $_GET['url']?>">ADD TO CART</a>
+				</aside>
 			</article>
-			<aside>
-				<span><?php echo $game['price'] ?></span>
-				<a href="cart.php?action=add&game=<?php echo $_GET['url']?>">ADD TO CART</a>
-			</aside>
 		<?php 	endif ?>
 		<?php endif ?>
-		<?php var_dump($game) ?>
 	</div>
 <?php
 include('footer.php');

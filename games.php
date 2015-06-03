@@ -9,12 +9,11 @@ include('assets/data/database_link.php');
 <html lang="en">
 <?php include ('html_head.php'); ?>
 <body>
-<?php include ('header.php');
-var_dump($_SESSION)?>
+<?php include ('header.php'); ?>
 	<div id="content_wrapper">
-	<nav class="searchBar">
+	<nav class="site-search-nav">
 		<ul>
-			<li><img src="assets/img/icon/search7.png" alt="icon" width="35px" height="30px">Search</li>
+			<li>Sort by</li>
 			<li><a href="?">ALL</a></li>
 			<li><a href="?genre=fps">FPS</a></li>
 			<li><a href="?genre=strategy">Strategy</a></li>
