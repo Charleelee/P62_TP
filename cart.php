@@ -14,7 +14,9 @@ include('assets/data/database_link.php');
 if (!isset($_SESSION['cart']) || !is_array($_SESSION['cart'])) $_SESSION['cart'] = array();
 
 //check action
-if (isset($_GET['action'])) {
+if(!isset($_SESSION['login-status'])){
+	header('location:inscription.php?error=01');
+}else if (isset($_GET['action'])) {
 	switch($_GET['action']) {
 		case 'add':
 			//on check si on passe un jeu

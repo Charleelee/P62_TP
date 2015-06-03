@@ -7,7 +7,7 @@ include('header.php');
     $email = isset($_GET['email']) ? $_GET['email'] : "";
 
     $_SESSION['user-info'][$username] = $password;
-    $redirect;
+    $redir;
 
 //array_merge($user_array,$client_array);
 //
