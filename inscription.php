@@ -10,13 +10,17 @@ if(isset($_GET)&&(isset($_GET['error']))){
             $error = 'Vous devez être connecté pour ajouter des item au cart';
             break;
         case'02':
-            $error = 'Votre pseudo doit faire entre 3 et 10 caractères !';
+            $error = 'Votre pseudo doit commencer par une majuscule !';
             break;
         case'03':
-            $error = 'Votre mot de passe doit faire entre 2 et 8 caractères!';
+            $error = 'Votre pseudo doit faire entre 3 et 10 caractères !';
             break;
         case'04':
-            $error='Vos mot de passe ne correspondent pas !';
+            $error='Votre mot de passe doit faire entre 2 et 8 caractères!';
+            break;
+        case'05':
+            $error = 'Vos mot de passe ne correspondent pas !';
+            break;
     }
 }else{
     $error=null;
