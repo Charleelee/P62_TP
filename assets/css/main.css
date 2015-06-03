@@ -9,30 +9,41 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#navibarre > ul {
+
+
+/* CSS de la navigation */
+.logo{
+    width:40px;
+}
+
+.site-header {
+    text-align: center;
+}
+
+.site-main-nav > ul {
     position: relative;
     padding: 0;
+    width: 100%;
     height: 65px;
     margin-top: 0px;
 }
 
-#navibarre > ul >li {
+.site-main-nav > ul > li {
     list-style: none;
     display:inline-block;
-    border-left: solid rgba(128, 128, 128, 0.50) 2px;
-    border-right: solid rgba(255, 255, 255, 0.50) 2px;
+    vertical-align: top;
     padding: 5px 20px;
-    float:left;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    width:200px;
     height: 55px;
+    border-left: solid rgba(128, 128, 128, 0.50) 2px;
+    border-right: solid #ECECEC 2px;
 }
 
-/* CSS de la navigation */
-
-.logo{
-    width:40px;
+.site-main-nav > ul > li > a {
+    display: block;
+    padding-top: 17px;
+    width:200px;
+    height: 55px;
 }
 
 #connectsubmit {
@@ -42,44 +53,40 @@ body {
     top:-40px;
 }
 
-nav {
+.site-main-nav, .site-search-nav {
     background-color: #e4e4e4;
     box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.75);
 }
 
-#navibarre > ul > li {
-    width:200px;
-}
-
-#navibarre > ul > li#login_li{
+.site-main-nav > ul > li #login_li{
     width:298px;
     padding-bottom: 5px;
     border-right:none;
 }
 
-#navibarre > ul > li#logo {
+.site-main-nav > ul > li #logo {
     width:3%;
     padding-left: 13px;
     width:40px;
 }
 
-#navibarre > ul > li#cart {
+.site-main-nav > ul > li #cart {
     box-sizing: border-box;
     height:65px;
     padding-top:22px;
 }
 
-#logo:hover{
+#logo:hover {
     background-color: #ba0101;
     transition: background-color 300ms linear;
 }
 
-li:hover{
+.site-main-nav ul li:hover {
     background-color: #0eb5f7;
     transition: background-color 300ms linear;
 }
 
-li:hover a{
+.site-main-nav ul li:hover a {
     color:white;
 }
 
@@ -91,22 +98,51 @@ li:hover a{
     padding:5px;
     width: 6px;
     position:relative;
-    top:-35px;
-    right:-20px;
+    top:-20px;
+    right:-0px;
 }
 
 #cart_icon {
     position: relative;
-    top:-18px;
-    left:130px;
+    top:-60px;
+    left:75px;
     color: #656565;
     width:20px;
 }
 
 /* CSS search Nav de la page game */
 
-.searchBar {
+.site-search-nav {
+    text-align: center;
     margin: 0 auto;
+    height: 40px;
+}
+
+.site-search-nav ul {
+    padding: 0;
+    width: 100%;
+}
+
+.site-search-nav ul li {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.site-search-nav ul li a {
+    display: block;
+    width: 180px;
+    height: 40px;
+}
+
+.site-search-nav ul li:hover {
+    background-color: #0eb5f7;
+    transition: background-color 300ms linear;
+}
+
+.site-search-nav ul li:hover a {
+    color:white;
 }
 
 /* CSS pour les <article> de la page game */
@@ -230,7 +266,32 @@ input#email{
     margin-top:20px;
     margin-left:100px;
 }
+/* CSS PAGE GAME DETAILS */
 
+.game-detail-article {
+    height: 100%;
+    padding: 50px;
+    background: url("../img/platform.png");
+}
+
+.game-detail-img {
+    width: 350px;
+}
+
+.add-cart {
+    border: solid black 1px;
+    border-radius: 4px;
+    padding:2px 6px;
+    background-color: #d5d5d5;
+    color: #686868;
+    width: 115px;
+}
+
+.add-cart:hover {
+    background: linear-gradient(to bottom,#9fbf00,#80ab00);
+    color:#fff
+}
+    
 /* CSS SECTION FOOTER */
 
 footer {

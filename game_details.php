@@ -16,19 +16,36 @@ include('assets/data/database_link.php');
 				if ($game == null): ?>
 					<h1>Cet article n'existe pas</h1>
 		<?php 	else: ?>
-			<article>
+			<article class="game-detail-article">
 				<h1><?php echo $game['title'] ?></h1>
-				<img src="<?php echo $game['img'] ?>" alt="image">
+				<img class="game-detail-img" src="<?php echo $game['img'] ?>" alt="image">
 				<h3>Description</h3>
 				<p><?php echo $game['description'] ?></p>
+				<div class="add-cart">
+					<span><?php echo $game['price'].'$' ?></span>
+					<a href="cart.php?action=add&game=<?php echo $_GET['url']?>">ADD TO CART</a>
+				</div>
+				<?php 
+					$i = 0;
+					$games = getGames(); 
+				?>
+				<h4>More games to choose from...</h4>
+				<?php foreach ($games as $key => $v): ?>
+					<?php $i++; ?>
+					<a class="<?php echo $v['genre'] ?>" href="game_details.php?url=<?php echo $v['url'] ?>">
+						<article class="game_product" id="<?php echo $v['id'] ?>">
+							<img class="product_img" src="<?php echo $v['img'] ?>" alt='image'>
+							<h3><?php echo $v['title'] ?></h3>
+							<span class="product_price"><?php echo $v['price'].'$' ?></span>
+						</article>
+					</a>
+					<?php if ($i == 4) {
+						break;
+					} ?>
+				<?php endforeach ?>
 			</article>
-			<aside>
-				<span><?php echo $game['price'] ?></span>
-				<a href="cart.php?action=add&game=<?php echo $_GET['url']?>">ADD TO CART</a>
-			</aside>
 		<?php 	endif ?>
 		<?php endif ?>
-		<?php var_dump($game) ?>
 	</div>
 <?php
 include('footer.php');
