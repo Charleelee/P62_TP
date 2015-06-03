@@ -9,6 +9,14 @@ if(isset($_GET)&&(isset($_GET['error']))){
         case'01':
             $error = 'Vous devez être connecté pour ajouter des item au cart';
             break;
+        case'02':
+            $error = 'Votre pseudo doit faire entre 3 et 10 caractères !';
+            break;
+        case'03':
+            $error = 'Votre mot de passe doit faire entre 2 et 8 caractères!';
+            break;
+        case'04':
+            $error='Vos mot de passe ne correspondent pas !';
     }
 }else{
     $error=null;
@@ -21,6 +29,8 @@ if(isset($_GET)&&(isset($_GET['error']))){
             <input required="required" type="text" name="pseudo" id="pseudo">
         <label for="pwrd">Mot de passe :</label>
             <input required="required" type="text" name="pass" id="pwrd">
+        <label for="verif_pwrd">Confirmez:</label>
+            <input required="required" type="text" name="verif_pass" id="verif_pwrd">
     </fieldset>
     <fieldset id="user_info">
         <label for="name">Nom :</label>

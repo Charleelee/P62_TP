@@ -8,7 +8,9 @@ include('assets/data/database_link.php');
 <html lang="en">
 <?php include ('html_head.php'); ?>
 <body>
-<?php include ('header.php'); ?>
+<?php include ('header.php');
+var_dump($_SESSION)
+?>
     <div id="game_wrapper">
         <?php $games = getGames();
             foreach ($games as $key => $v): ?>
