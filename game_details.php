@@ -27,7 +27,7 @@ include('assets/data/database_link.php');
 				</div>
 				<?php 
 					$i = 0;
-					$games = getGames(); 
+					$games = getGamesByRand(); 
 				?>
 				<h4>More games to choose from...</h4>
 				<?php foreach ($games as $key => $v): ?>

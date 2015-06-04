@@ -46,6 +46,13 @@ if(!isset($_SESSION['login-status'])){
 
 				if ($_SESSION['cart'][$_GET['game']] == 0) unset($_SESSION['cart'][$_GET['game']]);
 			}
+			break;
+		case 'checkout':
+			if (isset($_SESSION['cart'])) {
+				unset($_SESSION['cart']);
+				header('location: index.php');
+			}
+			break;
 	}
 }
 
@@ -54,21 +61,28 @@ if(!isset($_SESSION['login-status'])){
     <?php 
     $subTotal = 0;
     if (sizeof($_SESSION['cart']) > 0): ?>
-    <ul>
+    <section class="cart-page-section">
+    <a id="promo-link" href="games.php"></a>
+    <img class="promo" src="assets/img/cart_promo.jpg" alt="img">
+    <table>
+ 	
     	<?php foreach($_SESSION['cart'] as $game=>$qty) { 
     		//get game data
     		$gameData = getOneGame($game);
     		$subTotal += $gameData['price'] * $qty;
     	?>
-    	<li><?php echo $gameData['title'] ?> ( <?php echo $gameData['price'] ?> $) x <?php echo $qty?> &nbsp; <a href="cart.php?action=remove&game=<?php echo $game ?>">Moins un</a></li>
+    	<tr><td><?php echo $gameData['title'] ?> ( <?php echo $gameData['price'] ?> $) x <?php echo $qty?></td><td class="remove-button"> &nbsp; <a href="cart.php?action=remove&game=<?php echo $game ?>">Remove</a></td></tr>
 		<?php } ?>
-    </ul>
-	
-
-	<p>Subtotal: <?php echo $subTotal ?></p>
+    	<tr><td>Subtotal: <?php echo $subTotal.'$' ?></td><td><a href="cart.php?action=checkout">CHECKOUT NOW</a></td></tr>
+    </table>
+    <p>We never save your payment details and the order is protected by secure connection. Your order is also covered by our 30 Day Money Back Guarantee. This purchase will be subject to consumer withdrawal rights, which will end once the digital content is downloaded. </p>
 	<?php else: ?>
-		<p>Le panier est vide</p>
+		<section class="cart-page-section">
+			<img class="promo" src="assets/img/cart_promo.jpg" alt="img">
+			<p>Le panier est vide</p>
+		</section>
 	<?php endif ?>
+	</section>
 </div>
 <?php
 include('footer.php');
