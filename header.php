@@ -1,18 +1,9 @@
 <?php
 //init session
 session_start();
-if (isset($_SESSION['cart'])) {
-	if(count($_SESSION['cart'])==0){
-		$qty=0;
-	}else {
-		foreach ($_SESSION['cart'] as $game => $qty) {
-
-		}
-	}
-}
-else {
-	$qty=0;
-}
+if (isset($_SESSION['cart']) && (!empty($_SESSION['cart']))) {
+	$qty = count($_SESSION['cart']);
+	} else { $qty = 0; }
 ?>
 <header class="site-header">
 	<nav class="site-main-nav">

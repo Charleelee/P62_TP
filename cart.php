@@ -46,11 +46,13 @@ if(!isset($_SESSION['login-status'])){
 
 				if ($_SESSION['cart'][$_GET['game']] == 0) unset($_SESSION['cart'][$_GET['game']]);
 			}
+			break;
 		case 'checkout':
 			if (isset($_SESSION['cart'])) {
 				unset($_SESSION['cart']);
 				header('location: index.php');
 			}
+			break;
 	}
 }
 
