@@ -295,9 +295,11 @@ input#email{
 /* CSS SECTION CART */
 
 .cart-page-section {
-    height: 600px;
+    position: relative;
+    height: 660px;
     padding: 50px;
     background: url("../img/platform.png");
+    clear: both;
 } 
 
 table {
@@ -313,7 +315,38 @@ th,td {
     text-align: center;
     letter-spacing: 1px;
     font-weight: 300;
-} 
+    background-color: #d5d5d5;
+}
+
+.remove-button {
+    border: solid black 1px;
+    border-radius: 4px;
+    background-color: #d5d5d5;
+    color: #686868;
+}
+
+.remove-button a {
+    padding-right: 5px;
+}
+
+.remove-button:hover {
+    background: linear-gradient(to bottom,#9fbf00,#80ab00);
+    color:#fff
+}
+
+.promo {
+    float: right;
+    padding-left: 125px;
+}
+
+#promo-link {
+    display: block;
+    position: absolute;
+    top: 331px;
+    right: 252px;
+    width: 190px;
+    height: 44px;
+}
 
 /* CSS SECTION FOOTER */
 
