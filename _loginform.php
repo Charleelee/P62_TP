@@ -2,6 +2,7 @@
 
 $user_is_trying_to_connect = isset($_POST['connect']);
 $user_is_connected = isset($_SESSION['login-status']);
+$user_exist = isset($_SESSION['user-info']);
 $user_want_to_disconnect = isset($_POST['disconnect']);
 
 if($user_is_trying_to_connect){
