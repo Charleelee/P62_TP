@@ -58,16 +58,17 @@ body {
     box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.75);
 }
 
-.site-main-nav > ul > li #login_li{
-    width:298px;
-    padding-bottom: 5px;
-    border-right:none;
+.site-main-nav > ul > #login_li {
+    border-right: none;
 }
 
-.site-main-nav > ul > li #logo {
-    width:3%;
+.site-main-nav > ul #logo {
+    position: relative;
+    left: -84px;
     padding-left: 13px;
     width:40px;
+    border-left: none;
+    border-right: none;
 }
 
 .site-main-nav > ul > li #cart {
