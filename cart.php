@@ -32,6 +32,21 @@ if(!isset($_SESSION['login-status'])){
 			$_SESSION['cart'][$_GET['game']]++;
 
 			break;
+		case 'addmore':
+			//on check si on passe un jeu
+			if (!isset($_GET['game'])) break;
+			//on fetch le jeu
+			$game = getOneGame($_GET['game']);
+			//on sassure que le jeu a ete trouve
+			if ($game == null) break;
+
+			//on ajoute le jeu au cart
+			if (!isset($_SESSION['cart'][$_GET['game']])) $_SESSION['cart'][$_GET['game']] = 0;
+
+			$_SESSION['cart'][$_GET['game']]++;
+
+			break;	
+			
 		case 'remove':
 			//on check si on passe un jeu
 			if (!isset($_GET['game'])) break;
@@ -71,7 +86,9 @@ if(!isset($_SESSION['login-status'])){
     		$gameData = getOneGame($game);
     		$subTotal += $gameData['price'] * $qty;
     	?>
-    	<tr><td><?php echo $gameData['title'] ?> ( <?php echo $gameData['price'] ?> $) x <?php echo $qty?></td><td class="remove-button"> &nbsp; <a href="cart.php?action=remove&game=<?php echo $game ?>">Remove</a></td></tr>
+    	<tr><td><?php echo $gameData['title'] ?> ( <?php echo $gameData['price'] ?> $) x <?php echo $qty?></td>
+    	<td class="remove-button"> &nbsp; <a href="cart.php?action=addmore&game=<?php echo $game ?>">ADD</a></td>
+    	<td class="remove-button"> &nbsp; <a href="cart.php?action=remove&game=<?php echo $game ?>">Remove</a></td></tr>
 		<?php } ?>
     	<tr><td>Subtotal: <?php echo $subTotal.'$' ?></td><td><a href="cart.php?action=checkout">CHECKOUT NOW</a></td></tr>
     </table>

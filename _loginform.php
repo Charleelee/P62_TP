@@ -15,11 +15,12 @@ $user_want_to_disconnect = isset($_POST['disconnect']);
 
 if($user_is_trying_to_connect){
     foreach($authorized as $key => $value){
-        if(($_POST['username']==$key)&&($_POST['password']==$value)){
-            $_SESSION['login']=$_POST['username'];
-            $_SESSION['login-status']='logged';
-            redirect($_SERVER['PHP_SELF']);
-            break;
+        if((($_POST['username']==$key)&&($_POST['password']==$value))||
+            ($_SESSION['user-info'][$_POST['username']]=$_POST['username'])){
+                $_SESSION['login']=$_POST['username'];
+                $_SESSION['login-status']='logged';
+                redirect($_SERVER['PHP_SELF']);
+                break;
         }else{
             unset($_SESSION['login-status']);
             redirect('inscription.php?error=07');

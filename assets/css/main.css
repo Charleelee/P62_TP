@@ -338,7 +338,7 @@ fieldset{
 .cart-page-section {
     position: relative;
     height: 660px;
-    padding: 50px;
+    padding: 25px;
     background: url("../img/platform.png");
     clear: both;
 } 
@@ -377,7 +377,7 @@ th,td {
 
 .promo {
     float: right;
-    padding-left: 125px;
+    padding-left: 42px;
 }
 
 #promo-link {
