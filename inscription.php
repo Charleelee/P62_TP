@@ -22,16 +22,24 @@ if(isset($_GET)&&(isset($_GET['error']))){
             $error='Votre mot de passe doit faire entre 4 et 10 caractères!';
             break;
         case'06':
-            $error = 'Vos mot de passe ne correspondent pas !';
+            $error = 'Vos mots de passe ne correspondent pas !';
+            break;
+        case'07':
+            $error = 'Votre nom d\'utilisateur ou mot de passe n\'apparait pas dans notre base de
+            donnée. Veuillez vous inscrire.';
+            break;
+        default:
+            $error = 'Erreur inconnue. Veuillez contacter Mr Gilles Pénissard :)';
             break;
     }
 }else{
     $error=null;
 }
 ?>
-<h1><?php echo $error ?></h1>
+<h1 id="error_msg"><?php echo $error ?></h1>
 <form id="inscription_form" name="inscription_form" method="get" action="_add_user.php">
     <fieldset id="login_info">
+        <legend>Information de connexion</legend>
         <label for="pseudo">Pseudo :</label>
             <input required="required" type="text" name="pseudo" id="pseudo">
         <label for="pwrd">Mot de passe :</label>
@@ -40,6 +48,7 @@ if(isset($_GET)&&(isset($_GET['error']))){
             <input required="required" type="text" name="verif_pass" id="verif_pwrd">
     </fieldset>
     <fieldset id="user_info">
+        <legend>Informations personnelles</legend>
         <label for="name">Nom :</label>
             <input type="text" name="nom" id="name">
         <label for="f_name">Nom de famille :</label>

@@ -247,7 +247,10 @@ input#pseudo{
 }
 
 input#pwrd{
-    width: 175px;
+    width: 176px;
+}
+input#verif_pwrd{
+    width:199px;
 }
 
 input#name{
@@ -259,12 +262,46 @@ input#f_name{
 }
 
 input#email{
-    width:225px;
+    width:224px;
 }
 
-#user_info > input[type=submit]{
-    margin-top:20px;
-    margin-left:100px;
+#error_msg{
+    color:white;
+    background-color: red;
+    text-align: center;
+    width:auto;
+    height:auto;
+}
+
+fieldset#user_info > input[type=submit]{
+    transition: background-color 300ms linear;
+    background-color: #707070;
+    height:30px;
+    border:none;
+    width:100%;
+    margin-top:15px;
+}
+fieldset#user_info > input[type=submit]:hover {
+    background-color: #0eb5f7;
+    transition: background-color 300ms linear;
+}
+
+fieldset{
+    border:none;
+}
+
+#login_info{
+    border-bottom: white solid 1px;
+    margin-bottom: 10px;
+
+}
+#login_info > legend{
+    padding-top:5px;
+}
+#inscription_form{
+    background-color: #c6d3d0;
+    margin-bottom:10px;
+    border:solid #181818 1px;
 }
 /* CSS PAGE GAME DETAILS */
 

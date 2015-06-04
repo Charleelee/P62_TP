@@ -1,13 +1,28 @@
 <?php function redirect($url){ header("location:$url"); }
 
+$authorized=array(
+    'Jorel' =>'jorel12',
+    'admin' => 'admin',
+    'user' => 'user'
+);
+
 $user_is_trying_to_connect = isset($_POST['connect']);
 $user_is_connected = isset($_SESSION['login-status']);
 $user_exist = isset($_SESSION['user-info']);
 $user_want_to_disconnect = isset($_POST['disconnect']);
 
 if($user_is_trying_to_connect){
-    $_SESSION['login-status']='logged';
-    redirect($_SERVER['PHP_SELF']);
+    foreach($authorized as $key => $value){
+        if(($_POST['username']==$key)&&($_POST['password']==$value)){
+            $_SESSION['login-status']='logged';
+            redirect($_SERVER['PHP_SELF']);
+        }else{
+            unset($_SESSION['login-status']);
+            redirect('inscription.php?error=07');
+        }
+    }
+//    $_SESSION['login-status']='logged';
+//    redirect($_SERVER['PHP_SELF']);
 }
     ?>
     <div id="login_logout_form">
