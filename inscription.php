@@ -36,6 +36,7 @@ if(isset($_GET)&&(isset($_GET['error']))){
     $error=null;
 }
 ?>
+<section class="form-section">
 <h1 id="error_msg"><?php echo $error ?></h1>
 <form id="inscription_form" name="inscription_form" method="get" action="_add_user.php">
     <fieldset id="login_info">
@@ -58,6 +59,7 @@ if(isset($_GET)&&(isset($_GET['error']))){
         <input type="submit" value="Inscription">
     </fieldset>
 </form>
+</section>
 <?php include ('footer.php'); ?>
 </body>
 </html>

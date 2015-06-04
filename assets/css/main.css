@@ -237,6 +237,10 @@ article:hover > span {
 
 /* CSS de la page d'inscription */
 
+.form-section {
+    height: 600px;
+}
+
 form#inscription_form{
     width:300px;
     margin:0 auto;

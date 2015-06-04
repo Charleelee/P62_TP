@@ -9,7 +9,7 @@ include('assets/data/database_link.php');
 <html lang="en">
 <?php include ('html_head.php'); ?>
 <body>
-<?php include ('header.php'); var_dump($_SESSION) ?>
+<?php include ('header.php'); ?>
 	<div id="content_wrapper">
 	<nav class="site-search-nav">
 		<ul>
