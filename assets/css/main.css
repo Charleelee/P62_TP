@@ -112,6 +112,11 @@ body {
 
 /* CSS search Nav de la page game */
 
+#sort:hover {
+    background-color: #e4e4e4;
+    transition: none;
+}
+
 .site-search-nav {
     text-align: center;
     margin: 30px auto 20px auto;
@@ -146,6 +151,7 @@ body {
 }
 
 /* CSS pour les <article> de la page game */
+
 .product, .game_product {
     display:inline-block;
 }

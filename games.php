@@ -13,7 +13,7 @@ include('assets/data/database_link.php');
 	<div id="content_wrapper">
 	<nav class="site-search-nav">
 		<ul>
-			<li>Sort by</li>
+			<li id="sort">Sort by</li>
 			<li><a href="?">ALL</a></li>
 			<li><a href="?genre=fps">FPS</a></li>
 			<li><a href="?genre=strategy">Strategy</a></li>
